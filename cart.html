@@ -1,0 +1,99 @@
+ <!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Your Cart</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #F5D2D2;
+        padding: 20px;
+      }
+      h1 { text-align: center; }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        background: white;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      button {
+        background-color: #ff7675;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #d63031;
+      }
+      #backBtn {
+        display: block;
+        margin: 20px auto;
+        background: #74b9ff;
+      }
+    </style>
+  </head>
+  <body>
+    <h4 style="text-align:center">📋 Your List 📋</h4>
+    <h5 style="text-align:center">TAKE A SCREENSHOT OF YOUR LIST AND<br> MESSAGE US AT<br> <a href="https://www.facebook.com/alingjackieskitchen/">ALING JACKIE'S KITCHEN</a><br> TO PROCEED TO YOUR ORDER</h5>
+    <h5 style="text-align:center">🫰THANK YOU SUKIE🫰</h5>
+    <ul id="cartItems"></ul>
+    <p id="cartTotal"><strong>Total:</strong> ₱0</p>
+    <button id="clearCartBtn" >Clear List</button>
+    <!--<button id="backBtn" onclick="window.close()">Close</button>-->
+
+    <script>
+      // Load cart data from localStorage
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+      function calculateTotal() {
+        return cart.reduce((sum, item) => sum + item.price, 0);
+      }
+
+      function updateCart() {
+        const list = document.getElementById('cartItems');
+        const total = document.getElementById('cartTotal');
+        list.innerHTML = '';
+
+        if (cart.length === 0) {
+          list.innerHTML = '<li>Your cart is empty.</li>';
+        } else {
+          cart.forEach((item, index) => {
+            const li = document.createElement('li');
+            li.textContent = `${item.name} — ₱${item.price}`;
+
+            const removeBtn = document.createElement('button');
+            removeBtn.textContent = '❌';
+            removeBtn.onclick = () => {
+              cart.splice(index, 1);
+              localStorage.setItem('cart', JSON.stringify(cart));
+              updateCart();
+            };
+
+            li.appendChild(removeBtn);
+            list.appendChild(li);
+          });
+        }
+
+        total.innerHTML = `<strong>Total:</strong> ₱${calculateTotal()}`;
+      }
+
+      document.getElementById('clearCartBtn').addEventListener('click', () => {
+        cart = [];
+        localStorage.setItem('cart', JSON.stringify(cart));
+        updateCart();
+      });
+
+      updateCart();
+    </script>
+  </body>
+</html>

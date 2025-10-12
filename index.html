@@ -1,0 +1,305 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <title>ALING JACKIE'S KITCHEN</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+        <title> ALING JACKIE'S KITCHEN </title>
+
+        
+        
+        <div class="logo">
+            
+            <img src="https://i.postimg.cc/R0bm52cG/logomo.png"; width="30%" height="85%" style="cursor:pointer">
+        
+        </div>
+            <input type="text" id="search" placeholder="searchMenu" class="sea">
+        <div>
+
+        </div>
+
+
+
+    </head>
+
+    <body style="background-color: #F5D2D2;">
+
+        
+        <!-- TAB -->
+        <div class="container">
+            <h1> ALING JACKIE'S MENU </h1>
+        </div>
+        <div class="line"></div>
+        <div class="tab">
+            <button class="btn"; onclick="category('bundle')">BUNDLES</button>
+            <button class="btn"; onclick="category('bilao')">ALA CARTE</button>
+            <button class="btn"; onclick="category('partytray')">PARTY TRAY</button>
+            <button class="btn"; onclick="category('solo')">SOLO ORDER</button>
+            <button class="btn"; onclick="category('dessert')">DESSERT</button>
+            <button class="btn"; onclick="category('drink')">DRINKS</button>
+            <button class="btn"; onclick="category('other')">OTHERS</button>
+        
+        </div>
+        <div class="line"></div>
+
+        <!-- BUNDLE MENU -->
+        <h1>BUNDLES</h1>
+        <div class="row" id="bundle">
+             <div class="column">
+                <img src="https://i.postimg.cc/SNBs0bNV/bday-bash.jpg" style="width:100%">
+                <p>BUNDLE BIRTHDAY BASH - 3150 pesos</p>
+                <button class="overlay" onclick="addtocart('BIRTHDAY BASH', 3150)"> ADD TO LIST </button>
+            </div>
+            <div class="column">
+                <img src="https://i.postimg.cc/vHJBRwH3/bday-sukie.jpg" style="width:100%">
+                <p>BUNDLE BIRTHDAY SUKIE - 3099 pesos</p>
+                <button class="overlay" onclick="addtocart('BIRTHDAY SUKIE', 3099)"> ADD TO LIST </button>
+            </div>
+            <div class="column">
+                <img src="https://i.postimg.cc/J4fnwC4p/blessed.jpg" style="width:100%">
+                <p>BUNDLE BLESSED - 1950 pesos</p>
+                <button class="overlay" onclick="addtocart('BLESSED', 1950)"> ADD TO LIST </button>
+            </div>
+            <div class="column">
+                <img src="https://i.postimg.cc/5Nh0cWNP/bonding.jpg" style="width:100%">
+                <p>BUNDLE BONDING - 1150 pesos</p>
+                <button class="overlay" onclick="addtocart('BONDING', 1150)"> ADD TO LIST </button>
+            </div>
+            <div class="column">
+                <img src="https://i.postimg.cc/J4fnwC46/combo-foodtrip.jpg"  style="width:100%">
+                <p>BUNDLE COMBO FOODTRIP - 600 pesos</p>
+                <button class="overlay" onclick="addtocart('COMBO FOODTRIP', 1150)"> ADD TO LIST </button>
+            </div>
+            <div class="column">
+                <img src="https://i.postimg.cc/Mp1Gq3vy/combo-packed.jpg" style="width:100%">
+                <p>BUNDLE COMBO PACKED - 2550 pesos</p>
+                <button class="overlay" onclick="addtocart('COMBO PACKED', 2550)"> ADD TO LIST </button>
+            </div>
+            <div class="column">
+                <img src="https://i.postimg.cc/JzjhMYGq/eats-for-8-party-tray.jpg" style="width:100%">
+                <p>BUNDLE EATS FOR EIGHT (PARTY TRAY) - 2999 pesos</p>
+                <button class="overlay" onclick="addtocart('EATS FOR 8 (PARTY TRAY)', 2999)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/J4fnwC4Y/eats-for-8-bilao.jpg" style="width:100%">
+                <p>BUNDLE EATS FOR EIGHT (BILAO) - 2599 pesos</p>
+                <button class="overlay" onclick="addtocart('EATS FOR 8 (BILAO)', 2599)"> ADD TO LIST </button>
+            </div>
+            <div class="column">
+                <img src="https://i.postimg.cc/6pCQtbyc/effort.jpg" style="width:100%">
+                <p>BUNDLE EFFORT - 2350 pesos</p>
+                <button class="overlay" onclick="addtocart('EFFORT', 2350)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/cLfJ0krT/elliana.jpg" style="width:100%">
+                <p>BUNDLE ELLIANA - 4500 pesos</p>
+                <button class="overlay" onclick="addtocart('ELLIANA', 4500)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/RZw04pNg/energy.jpg" style="width:100%">
+                <p>BUNDLE ENERGY - 1000 pesos</p>
+                <button class="overlay" onclick="addtocart('ENERGY', 1000)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/9QyfCgrx/generous.jpg" style="width:100%">
+                <p>BUNDLE GENEROUS - 3300 pesos</p>
+                <button class="overlay" onclick="addtocart('GENEROUS', 3300)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/dVG0wNLx/good-vibes.jpg" style="width:100%">
+                <p>BUNDLE GOOD VIBES - 1000 pesos</p>
+                <button class="overlay" onclick="addtocart('GOOD VIBES', 1000)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/2Sn5r9Vt/grateful.jpg" style="width:100%">
+                <p>BUNDLE GRATEFUL - 1650 pesos</p>
+                <button class="overlay" onclick="addtocart('GRATEFUL', 1650)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/Dw1znp8R/grind.jpg" style="width:100%">
+                <p>BUNDLE GRIND - 1000 pesos</p>
+                <button class="overlay" onclick="addtocart('GRIND', 1000)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/vZ5mb2cp/happy.jpg" style="width:100%">
+                <p>BUNDLE HAPPY - 2300 pesos</p>
+                <button class="overlay" onclick="addtocart('HAPPY', 2300)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/wjDBg41K/jacy.jpg" style="width:100%">
+                <p>BUNDLE JACY - 3700 pesos</p>
+                <button class="overlay" onclick="addtocart('JACY', 3700)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/L8js2QJK/jolly.jpg" style="width:100%">
+                <p>BUNDLE JOLLY - 2200 pesos</p>
+                <button class="overlay" onclick="addtocart('JOLLY', 2200)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/Z56q4sWz/love.jpg" style="width:100%">
+                <p>BUNDLE LOVE - 1700 pesos</p>
+                <button class="overlay" onclick="addtocart('LOVE', 1700)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/L8js2QJp/mother-earth.jpg" style="width:100%">
+                <p>BUNDLE MOTHER EARTH - 4750 pesos</p>
+                <button class="overlay" onclick="addtocart('MOTHER EARTH', 4750)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/4xp3s2YZ/oreo.jpg" style="width:100%">
+                <p>BUNDLE OREO - 2500 pesos</p>
+                <button class="overlay" onclick="addtocart('OREO', 2500)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/jjKS567B/passion.jpg" style="width:100%">
+                <p>BUNDLE PASSION - 1500 pesos</p>
+                <button class="overlay" onclick="addtocart('PASSION', 1500)"> ADD TO LIST </button>
+            </div>
+
+            <!--party box -->
+
+            <div class="column">
+                <img src="https://i.postimg.cc/xdY1CGmr/pb-amboy.jpg" style="width:100%">
+                <p>PARTY BOX AMBOY - 2000 pesos</p>
+                <button class="overlay" onclick="addtocart('PB AMBOY', 2000)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/zf5GBwhZ/pb-arigato.jpg" style="width:100%">
+                <p>PARTY BOX ARIGATO - 2000 pesos</p>
+                <button class="overlay" onclick="addtocart('PB ARIGATO', 2000)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/1zP3t0F1/pb-jackie.jpg" style="width:100%">
+                <p>PARTY BOX JACKIE - 1000 pesos</p>
+                <button class="overlay" onclick="addtocart('PB JACKIE', 1000)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/yd7pD5wZ/pb-jak.jpg" style="width:100%">
+                <p>PARTY BOX JAK - 1000 pesos</p>
+                <button class="overlay" onclick="addtocart('PB JAK', 1000)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/wv941PSR/pb-kakanin.jpg" style="width:100%">
+                <p>PARTY BOX 4 in 1 KAKANIN - 1200 pesos</p>
+                <button class="overlay" onclick="addtocart('PB KAKANIN', 1200)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/k47Y2ZkN/pb-mang-juan.jpg" style="width:100%">
+                <p>PARTY BOX MANG JUAN - 1200 pesos</p>
+                <button class="overlay" onclick="addtocart('PB MANG JUAN', 1200)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/cHdkvjVm/pb-mukbang.jpg" style="width:100%">
+                <p>PARTY BOX MUKBANG(pick your inclusion) - 2500 pesos</p>
+                <button class="overlay" onclick="addtocart('PB MUKBANG', 2500)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/PxdVCcBz/pb-noypi.jpg" style="width:100%">
+                <p>PARTY BOX NOYPI - 1599 pesos</p>
+                <button class="overlay" onclick="addtocart('PB NOYPI ', 1599)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/0Q9Xz3LC/pb-oppa.jpg" style="width:100%">
+                <p>PARTY BOX OPPA - 2000 pesos</p>
+                <button class="overlay" onclick="addtocart('PB OPPA', 2000)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/50fKXGZn/pb-paolo.jpg" style="width:100%">
+                <p>PARTY BOX PAOLO - 1200 pesos</p>
+                <button class="overlay" onclick="addtocart('PB PAOLO', 1200)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/pTPcm7gs/pb-pika-pika.jpg" style="width:100%">
+                <p>PARTY BOX PIKA-PIKA - 1599 pesos</p>
+                <button class="overlay" onclick="addtocart('PB PIKA-PIKA', 1599)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/xC9pX7Ws/pb-sawadeka.jpg" style="width:100%">
+                <p>PARTY BOX SAWADEKA - 2000 pesos</p>
+                <button class="overlay" onclick="addtocart('PB SAWADEKA', 2000)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/9McgDSv8/positive.jpg" style="width:100%">
+                <p>BUNDLE POSITIVE - 1000 pesos</p>
+                <button class="overlay" onclick="addtocart('POSITIVE', 1000)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/1ty78TL7/princess.jpg" style="width:100%">
+                <p>BUNDLE PRINCESS - 1200 pesos</p>
+                <button class="overlay" onclick="addtocart('PRINCESS', 1200)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/QtjYFPRy/samantha.jpg" style="width:100%">
+                <p>BUNDLE SAMANTHA - 4000 pesos</p>
+                <button class="overlay" onclick="addtocart('SAMANTHA', 4000)"> ADD TO LIST </button>
+            </div>
+
+
+        </div>
+
+        <!--BILAO-->
+        <h1>ALA CARTE</h1>
+        <div class="row" id="bilao">
+
+             <div class="column">
+                <img src="https://i.postimg.cc/rmqZDbvY/sampler-kakanin.jpg" style="width:100%">
+                <p>SAMPLER 4in1 KAKANIN - 300 pesos</p>
+                <button class="overlay" onclick="addtocart('SAMPLER', 300)"> ADD TO LIST </button>
+            </div>
+
+             <div class="column">
+                <img src="https://i.postimg.cc/9FDyftFx/537435082-1263565995783543-4384480714564658461-n.jpg" style="width:100%">
+                <p>24pcs PUTO CHEESE CUPCAKES - 200 pesos</p>
+                <button class="overlay" onclick="addtocart('24pcs PUTO', 200)"> ADD TO LIST </button>
+            </div>
+
+
+        </div>
+
+
+
+        <!--cart-->
+        <div>
+            <button id="cartlogo" class="list">🛒</button>
+        </div>
+    
+        
+        <!-- Load external JavaScript -->
+        <script src="scripts.js"></script>
+        
+    </body>
+
+</html>

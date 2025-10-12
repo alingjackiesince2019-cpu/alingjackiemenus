@@ -1,0 +1,187 @@
+/* ==============================
+   Base Styles
+============================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 5px;
+  padding: 20px;
+}
+
+.container {
+  text-align: center;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+}
+
+/* ==============================
+   Buttons and Overlays
+============================== */
+
+.btn, .overlay {
+  position: sticky;
+  top: 0;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 8px;
+  cursor: pointer;
+  background-color: #F8F7BA;
+  transition: background-color 1s ease;
+  
+}
+
+.btn:hover,
+.overlay:hover {
+  background-color: #F5D2D2;
+}
+
+/* ==============================
+   Tabs & Menus
+============================== */
+
+.tab {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 2px;
+  top: 0;
+  background-color: #F8F7BA;
+  padding: 10px 0;
+  z-index: 100;
+  scrollbar-width: none;
+  
+}
+.tab.buttons::-webkit-scrollbar{
+  display: none;
+}
+
+.menu {
+  padding-top: 10px;
+}
+
+/* ==============================
+   Grid Layout
+============================== */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.sea{
+  width: 80%;
+  max-width: 300px;
+  padding: 10px 15px ;
+  margin: 20px auto;
+  border-radius: 30px ;
+  border: 4px solid black;
+  font-size: 16px;
+  display: block;
+}
+
+.line{
+  border: 2px solid black;
+  
+}
+
+
+.list{
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: none;
+  color: black;
+  padding: 20px 20px;
+  border-radius: 30px;
+  text-align: center;
+  background-color: transparent;
+  font-size: 40px;
+  margin: 0px 0px;
+  cursor: pointer;
+ 
+}
+
+
+
+/* ==============================
+   Responsive Design
+============================== */
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .container {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .btn, .overlay {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    margin: 8px 0;
+    position: relative; 
+    bottom: auto;
+    
+  }
+
+
+  .row {
+    display: block;
+  }
+
+  .column {
+    width: 100%;
+    float: none;
+    padding: 10px 0;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tab {
+    position: relative;
+    top: auto;
+  }
+}
+
+/* Smaller mobile screens (like iPhone SE, etc.) */
+@media (max-width: 480px) {
+
+  .btn, .overlay {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
