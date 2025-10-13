@@ -45,4 +45,13 @@ function category(bilao) {
   if (target) {
     target.scrollIntoView({ behavior: 'smooth' });
   }
+
+}
+
+function category(partytray) {
+  const target = document.getElementById(partytray);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
 }
