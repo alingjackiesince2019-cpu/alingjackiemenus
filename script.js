@@ -55,3 +55,11 @@ function category(partytray) {
   }
 
 }
+
+function category(home) {
+  const target = document.getElementById(home);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
