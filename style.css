@@ -116,7 +116,7 @@ body {
   border-radius: 30px;
   text-align: center;
   background-color: transparent;
-  font-size: 40px;
+  font-size: 55px;
   margin: 0px 0px;
   cursor: pointer;
  
@@ -184,4 +184,5 @@ body {
   body {
     font-size: 14px;
   }
+
 }
