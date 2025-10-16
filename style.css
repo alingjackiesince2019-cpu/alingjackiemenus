@@ -122,6 +122,25 @@ body {
  
 }
 
+.lists{
+  position: fixed;
+  top: 10;
+  right: 0;
+  border: none;
+  color: black;
+  padding: 20px 20px;
+  border-radius: 30px;
+  text-align: center;
+  background-color: transparent;
+  font-size: 55px;
+  margin: 0px 0px;
+  cursor: pointer;
+ 
+}
+
+
+
+
 
 
 /* ==============================
@@ -186,3 +205,4 @@ body {
   }
 
 }
+
