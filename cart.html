@@ -40,6 +40,11 @@
         margin: 20px auto;
         background: #74b9ff;
       }
+     @media print{
+      button{
+       display:none;
+      }
+     }
     </style>
   </head>
   <body>
@@ -49,6 +54,7 @@
     <ul id="cartItems"></ul>
     <p id="cartTotal"><strong>Total:</strong> ₱0</p>
     <button id="clearCartBtn" >Clear List</button>
+   <button onclick="window.print()">PRINT🖨️</button>
     <!--<button id="backBtn" onclick="window.close()">Close</button>-->
 
     <script>
@@ -97,3 +103,4 @@
     </script>
   </body>
 </html>
+
