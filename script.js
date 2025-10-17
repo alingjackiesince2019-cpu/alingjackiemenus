@@ -72,3 +72,12 @@ function category(solo) {
 
 }
 
+function category(dessert) {
+  const target = document.getElementById(dessert);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
+
+
