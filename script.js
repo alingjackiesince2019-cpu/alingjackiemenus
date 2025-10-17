@@ -63,3 +63,12 @@ function category(home) {
   }
 
 }
+
+function category(solo) {
+  const target = document.getElementById(solo);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
+
