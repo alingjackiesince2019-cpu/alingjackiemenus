@@ -137,6 +137,13 @@ body {
  
 }
 
+.counter{
+   border: none;
+   text-align: center;
+   background-color:pink;
+   font-size:14px;
+   border-radius:100px;
+}
 
 
 
@@ -205,6 +212,7 @@ body {
   }
 
 }
+
 
 
 
