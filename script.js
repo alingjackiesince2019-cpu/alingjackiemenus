@@ -26,7 +26,7 @@ function addtocart(name, price) {
   // Save back to localStorage
   localStorage.setItem('cart', JSON.stringify(cart));
 
-  alert('$(o) x `${name} added to cart!`);
+  alert('${0} x `${name} added to cart!`);
 }
 
 
