@@ -2,6 +2,7 @@
 
 //COUNTER
 let o=1;
+let cartTotal=0;
 function count(change){
   o=Math.max(1,o+change)
   document.getElementById("orders").innerText=o;
@@ -13,7 +14,7 @@ function addtocart(name, price) {
   //add the COUNTER
   const total = o * price
   cartTotal +=total
-  document.getElementById("cart").innerText = cartTotal;
+  document.getElementById("cartTotal").innerText = cartTotal;
   
   
   // Get existing cart or create an empty one
@@ -102,6 +103,7 @@ function category(dessert) {
   }
 
 }
+
 
 
 
