@@ -142,7 +142,8 @@ body {
    text-align: center;
    background-color:pink;
    font-size:14px;
-   border-radius:100px;
+   border-radius:50px;
+   cursor: pointer;
 }
 
 
@@ -212,6 +213,7 @@ body {
   }
 
 }
+
 
 
 
