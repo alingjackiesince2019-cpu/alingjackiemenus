@@ -34,8 +34,8 @@ document.getElementById("search").addEventListener("input",function(){
 //COUNTER
 let o=1;
 function count(change){
-  o=math.max(1,o+change)
-  document.getelementbyid("orders").innerText=o;
+  o=Math.max(1,o+change)
+  document.getElementById("orders").innerText=o;
 }
 
 
@@ -91,6 +91,7 @@ function category(dessert) {
   }
 
 }
+
 
 
 
