@@ -1,7 +1,21 @@
-// --- CART LOGIC USING LOCALSTORAGE ---
+// --- CART USING LOCALSTORAGE ---
+
+//COUNTER
+let o=1;
+function count(change){
+  o=Math.max(1,o+change)
+  document.getElementById("orders").innerText=o;
+}
 
 // Add item to localStorage cart
 function addtocart(name, price) {
+
+  //add the COUNTER
+  const total = o * price
+  cartTotal +=total
+  document.getElementById("cart").innerText = cartTotal;
+  
+  
   // Get existing cart or create an empty one
   let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
@@ -11,13 +25,18 @@ function addtocart(name, price) {
   // Save back to localStorage
   localStorage.setItem('cart', JSON.stringify(cart));
 
-  alert(`${name} added to cart!`);
+  alert('$(o) x `${name} added to cart!`);
 }
 
-// When logo is clicked, open the cart page in a new tab/window
+
+
+
+
+// open cart
 document.getElementById('cartlogo').addEventListener('click', () => {
-  window.location.href='cart.html'; // Opens in a new tab
+  window.location.href='cart.html'; 
 });
+
 
 // search bar
 
@@ -30,14 +49,6 @@ document.getElementById("search").addEventListener("input",function(){
     a.style.display=text.includes(searchValue)?"block":"none"
   }) 
 })
-
-//COUNTER
-let o=1;
-function count(change){
-  o=Math.max(1,o+change)
-  document.getElementById("orders").innerText=o;
-}
-
 
 
 
@@ -91,6 +102,7 @@ function category(dessert) {
   }
 
 }
+
 
 
 
