@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Your Cart</title>
+   <script>src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"
+</script>
     <style>
       body {
         font-family: 'Courier New', monospace;
@@ -65,9 +67,6 @@
     <!--<button id="backBtn" onclick="window.close()">Close</button>-->
 
     <script>
-
-     src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"
-
      
      
       // Load cart data from localStorage
@@ -115,7 +114,7 @@
 
      document.querySelector('#shot').addEventListener('click',() => {
 
-      html2canvas(document.querySelector(#cartItems)).then(canvas = > {
+      html2canvas(document.querySelector('#cartItems')).then(canvas => {
        const link = document.createElement('a');
        link.download = 'list.png'
        link.href = canvas.toDataURL();
@@ -127,6 +126,7 @@
     </script>
   </body>
 </html>
+
 
 
 
