@@ -4,7 +4,7 @@
 function addtocart(name, price) {
 
 //added
-  let quantity = parseint(prompt('How many "${name}" would you like to order?',"1"));
+  let quantity = parseInt(prompt('How many "${name}" would you like to order?',"1"));
 
   if(isNaN(quantity)||quantity<1){
     alert("Please enter a valid quantity.");
@@ -15,7 +15,7 @@ function addtocart(name, price) {
   let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
   //added
-  const existingItem=cart.find(item=>item.name===name);
+  const existingItem=cart.find(item=>item.name === name);
 
   if(existingItem){
     existingItem.quantity+=quantity
@@ -106,6 +106,7 @@ function category(dessert) {
   }
 
 }
+
 
 
 
