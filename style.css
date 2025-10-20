@@ -116,7 +116,7 @@ body {
   border-radius: 30px;
   text-align: center;
   background-color: transparent;
-  font-size: 45px;
+  font-size: 35px;
   margin: 0px 0px;
   cursor: pointer;
  
@@ -131,19 +131,25 @@ body {
   border-radius: 30px;
   text-align: center;
   background-color: transparent;
-  font-size: 45px;
+  font-size: 35px;
   margin: 0px 0px;
   cursor: pointer;
  
 }
 
-.counter{
-   border: none;
-   text-align: center;
-   background-color: transparent;
-   font-size:30px;
-   border-radius:50px;
-   cursor: pointer;
+.location{
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: none;
+  color: black;
+  padding: 100px 20px;
+  border-radius: 30px;
+  text-align: center;
+  background-color: transparent;
+  font-size: 35px;
+  margin: 0px 0px;
+  cursor: pointer;
 }
 
 
@@ -213,6 +219,7 @@ body {
   }
 
 }
+
 
 
 
