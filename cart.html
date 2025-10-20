@@ -60,11 +60,16 @@
     <ul id="cartItems"></ul>
     <p id="cartTotal"><strong>Total:</strong> ₱0</p>
     <button id="clearCartBtn" >Clear List</button>
-   <p><strong>this 👇🏻 button is for walk-ins only</strong></p>
-   <button onclick="window.print()">PRINT🖨️</button>
+   <button id="shot">📸SCREEN SHOT(for online orders)📸</button>
+   <button onclick="window.print()">🖨️PRINT(for walk-in/dine-in)🖨️</button>
     <!--<button id="backBtn" onclick="window.close()">Close</button>-->
 
     <script>
+
+     src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"
+
+     
+     
       // Load cart data from localStorage
       let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
@@ -107,9 +112,22 @@
       });
 
       updateCart();
+
+     document.querySelector('#shot').addEventListener('click',() => {
+
+      html2canvas(document.querySelector(#cartItems)).then(canvas = > {
+       const link = document.createElement('a');
+       link.download = 'list.png'
+       link.href = canvas.toDataURL();
+       link.click();
+      })
+     })
+
+     
     </script>
   </body>
 </html>
+
 
 
 
