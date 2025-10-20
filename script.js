@@ -2,34 +2,18 @@
 
 // Add item to localStorage cart
 function addtocart(name, price) {
-
-//added
-  let quantity = parseInt(prompt('How many `${name}` would you like to order?',"1"));
-
-  if(isNaN(quantity)||quantity<1){
-    alert("Please enter a valid quantity.");
-    return;
-  }
   
   // Get existing cart or create an empty one
   let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-  //added
-  const existingItem=cart.find(item=>item.name === name);
-
-  if(existingItem){
-    existingItem.quantity += quantity;
-  }else{
-    cart.push({name,price,quantity});
-  }
   
   // Add new item
-  //cart.push({ name, price });
+  cart.push({ name, price });
 
   // Save back to localStorage
   localStorage.setItem('cart', JSON.stringify(cart));
 
-  alert(`${quantity} x ${name} added to cart!`);
+  alert(`${name} added to cart!`);
 }
 
 
@@ -106,6 +90,7 @@ function category(dessert) {
   }
 
 }
+
 
 
 
