@@ -91,6 +91,23 @@ function category(dessert) {
 
 }
 
+function category(drinks) {
+  const target = document.getElementById(drinks);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
+
+function category(cakes) {
+  const target = document.getElementById(cakes);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
+
+
 
 
 
