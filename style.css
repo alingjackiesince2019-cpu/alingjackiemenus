@@ -125,7 +125,7 @@ body {
 }
 .bahay{
   position: fixed;
-  gap:25px;
+  gap:50px;
   align-items:right;
   top: 0px;
   right: 0;
@@ -225,6 +225,7 @@ body {
   }
 
 }
+
 
 
 
