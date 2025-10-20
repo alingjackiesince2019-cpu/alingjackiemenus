@@ -25,6 +25,11 @@ document.getElementById('cartlogo').addEventListener('click', () => {
   window.location.href='cart.html'; 
 });
 
+// open MAP
+document.getElementById('map').addEventListener('click', () => {
+  window.location.href='location.html'; 
+});
+
 
 // search bar
 
@@ -106,6 +111,7 @@ function category(cakes) {
   }
 
 }
+
 
 
 
