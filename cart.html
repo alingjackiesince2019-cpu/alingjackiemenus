@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Your Cart</title>
-   <script>src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"
-</script>
+   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
     <style>
       body {
         font-family: 'Courier New', monospace;
@@ -62,7 +61,7 @@
     <ul id="cartItems"></ul>
     <p id="cartTotal"><strong>Total:</strong> ₱0</p>
     <button id="clearCartBtn" >Clear List</button>
-   <button id="shot">📸SCREEN SHOT(for online orders)📸</button>
+   <button onclick="shot()">📸SCREEN SHOT(for online orders)📸</button>
    <button onclick="window.print()">🖨️PRINT(for walk-in/dine-in)🖨️</button>
     <!--<button id="backBtn" onclick="window.close()">Close</button>-->
 
@@ -112,20 +111,21 @@
 
       updateCart();
 
-     document.querySelector('#shot').addEventListener('click',() => {
-
-      html2canvas(document.querySelector('#cartItems')).then(canvas => {
+     function shot() {
+      
+      html2canvas(document.body).then(canvas => {
        const link = document.createElement('a');
-       link.download = 'list.png'
+       link.download = 'screenshot.png';
        link.href = canvas.toDataURL();
        link.click();
-      })
-     })
-
+       });
+     }
+  
      
     </script>
   </body>
 </html>
+
 
 
 
