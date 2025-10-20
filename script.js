@@ -1,26 +1,39 @@
 // --- CART USING LOCALSTORAGE ---
 
 //COUNTER
-let o=1;
-function count(change){
-  o=Math.max(1,o+change)
-  document.getElementById("orders").innerText=o;
+function changeC(id,change){
+  const qty = document.getElementById('qty-${id}');
+  let qty = parseint(qtyEL.innerText);
+  qty=Math.max(1,qty+change);
+  qtyEL.innerText=qty;
+}
+function getC(id){
+  return
+  parseint(document.getElementById('qty-${id}').innerText);
 }
 
+  
 // Add item to localStorage cart
-function addtocart(name, price) {
+function addtocart(name, price,quantity=1) {
 
   
   // Get existing cart or create an empty one
   let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
+  const existing = cart.find(item=>item.name===name);
+  if(existing){
+    existing.quantity+=quantity;
+  } else{
+    cart.push({name,price,quantity});
+  }
+  
   // Add new item
-  cart.push({ name, price });
+  //cart.push({ name, price });
 
   // Save back to localStorage
   localStorage.setItem('cart', JSON.stringify(cart));
 
-  alert(`${name} added to cart!`);
+  alert('${quantity} x ${name} added to cart!`);
 }
 
 
@@ -97,6 +110,7 @@ function category(dessert) {
   }
 
 }
+
 
 
 
