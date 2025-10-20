@@ -140,7 +140,7 @@ body {
 .location{
   position: fixed;
   top: 0;
-  right: 0;
+  right: 30px;
   border: none;
   color: black;
   padding: 120px 20px;
@@ -219,6 +219,7 @@ body {
   }
 
 }
+
 
 
 
