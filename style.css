@@ -168,6 +168,15 @@ body {
   cursor: pointer;
 }
 
+.impormasyon{
+   background-color: B3BFFF;
+   border-radius:40px;
+   
+}
+
+.b{
+   background-color:FFBBE1;
+}
 
 
 
@@ -235,6 +244,7 @@ body {
   }
 
 }
+
 
 
 
