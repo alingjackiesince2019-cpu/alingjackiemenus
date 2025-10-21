@@ -129,7 +129,7 @@ body {
 }
 .bahay{
   position: flex;
-  gap:50px;
+  gap:0px;
   align-items:right;
   right: 0;
   border: none;
@@ -227,6 +227,7 @@ body {
   }
 
 }
+
 
 
 
