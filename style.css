@@ -123,7 +123,7 @@ body {
   padding: 20px 10px;
   border-radius: 20px;
   text-align: center;
-  background-color: transparent;
+  background-color: #336D82;
   font-size: 18px;
   margin: 0px 0px;
   cursor: pointer;
@@ -139,7 +139,7 @@ body {
   padding: 20px 10px;
   border-radius: 20px;
   text-align: center;
-  background-color: transparent;
+  background-color: #336D82;
   font-size: 18px;
   margin: 0px 0px;
   cursor: pointer;
@@ -162,20 +162,20 @@ body {
   padding: 20px 10px;
   border-radius: 20px;
   text-align: center;
-  background-color: transparent;
+  background-color: #336D82;
   font-size: 18px;
   margin: 0px 0px;
   cursor: pointer;
 }
 
 .impormasyon{
-   background-color: B3BFFF;
+   background-color: #F5ECE0;
    border-radius:40px;
    
 }
 
 .b{
-   background-color:FFBBE1;
+   background-color:#5F99AE;
 }
 
 
@@ -244,6 +244,7 @@ body {
   }
 
 }
+
 
 
 
