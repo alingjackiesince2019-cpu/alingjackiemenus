@@ -19,7 +19,8 @@ body {
 
 .logo {
   display: grid;
-  place-items: center;
+  place-items: right;
+   
 }
 
 /* ==============================
@@ -227,6 +228,7 @@ body {
   }
 
 }
+
 
 
 
