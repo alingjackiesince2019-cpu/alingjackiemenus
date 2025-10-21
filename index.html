@@ -12,14 +12,24 @@
         <title> ALING JACKIE'S KITCHEN </title>
 
         
+        <!--cart,search,info-->
+        <div class="fixbtn">
+            <button class="location" id="map">ℹ️<br>info</button>
+            <button id="cartlogo" class="list">🛍️<br>cart</button>
+            <button class="bahay" onclick="category('home')">🕵️<br>search</button>
+        </div>
+
+        
         
         <div class="logo">
             
             <img src="https://i.postimg.cc/R0bm52cG/logomo.png"; width="25%" height="70%" style="cursor:pointer">
         
         </div>
+        <!--SEARCH-->
+        <div id="home">
+            
             <input type="text" id="search" placeholder="searchMenu" class="sea">
-        <div>
 
         </div>
 
@@ -31,7 +41,7 @@
 
         
         <!-- TAB -->
-        <div class="container" id="home">
+        <div class="container">
             <h1> ALING JACKIE'S MENU </h1>
         </div>
         <div class="line"></div>
@@ -1572,80 +1582,80 @@
             <div class="column">
                 <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
                 <p>TARO DE NATA</p>
-                <button class="overlay" onclick="addtocart('TARO DE NATA (small)', 150)"> TARO DE NATA (small) - 150 pesos </button>
-                <button class="overlay" onclick="addtocart('TARO DE NATA (big)', 300)"> TARO DE NATA (big) - 300 pesos </button>
+                <button class="overlay" onclick="addtocart('TARO DE NATA (small)', 150)"> TARO DE NATA (small 500ml) - 150 pesos </button>
+                <button class="overlay" onclick="addtocart('TARO DE NATA (big)', 300)"> TARO DE NATA (big 1000ml) - 300 pesos </button>
             </div>
             
             <div class="column">
                 <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
                 <p>STRAWBERRY DE NATA</p>
-                <button class="overlay" onclick="addtocart('STRAWBERRY DE NATA (small)', 150)"> STRAWBERRY DE NATA (small) - 150 pesos </button>
-                <button class="overlay" onclick="addtocart('STRAWBERRY DE NATA (big)', 300)"> STRAWBERRY DE NATA (big) - 300 pesos </button>
+                <button class="overlay" onclick="addtocart('STRAWBERRY DE NATA (small)', 150)"> STRAWBERRY DE NATA (small 500ml) - 150 pesos </button>
+                <button class="overlay" onclick="addtocart('STRAWBERRY DE NATA (big)', 300)"> STRAWBERRY DE NATA (big 1000ml) - 300 pesos </button>
             </div>
 
             <div class="column">
                 <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
                 <p>BLUEBERRY DE NATA</p>
-                <button class="overlay" onclick="addtocart('BLUEBERRY DE NATA (small)', 150)"> BLUEBERRY DE NATA (small) - 150 pesos </button>
-                <button class="overlay" onclick="addtocart('BLUEBERRY DE NATA (big)', 300)"> BLUEBERRY DE NATA (big) - 300 pesos </button>
+                <button class="overlay" onclick="addtocart('BLUEBERRY DE NATA (small)', 150)"> BLUEBERRY DE NATA (small 500ml) - 150 pesos </button>
+                <button class="overlay" onclick="addtocart('BLUEBERRY DE NATA (big)', 300)"> BLUEBERRY DE NATA (big 1000ml) - 300 pesos </button>
             </div>
             
             <div class="column">
                 <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
                 <p>MOCHA DE NATA</p>
-                <button class="overlay" onclick="addtocart('MOCHA DE NATA (small)', 150)"> MOCHA DE NATA (small) - 150 pesos </button>
-                <button class="overlay" onclick="addtocart('MOCHA DE NATA (big)', 300)"> MOCHA DE NATA (big) - 300 pesos </button>
+                <button class="overlay" onclick="addtocart('MOCHA DE NATA (small)', 150)"> MOCHA DE NATA (small 500ml) - 150 pesos </button>
+                <button class="overlay" onclick="addtocart('MOCHA DE NATA (big)', 300)"> MOCHA DE NATA (big 1000ml) - 300 pesos </button>
             </div>
             
             <div class="column">
                 <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
                 <p>BUKO DE NATA</p>
-                <button class="overlay" onclick="addtocart('BUKO DE NATA (small)', 150)"> BUKO DE NATA (small) - 150 pesos </button>
-                <button class="overlay" onclick="addtocart('BUKO DE NATA (big)', 300)"> BUKO DE NATA (big) - 300 pesos </button>
+                <button class="overlay" onclick="addtocart('BUKO DE NATA (small)', 150)"> BUKO DE NATA (small 500ml) - 150 pesos </button>
+                <button class="overlay" onclick="addtocart('BUKO DE NATA (big)', 300)"> BUKO DE NATA (big 1000ml) - 300 pesos </button>
             </div>
             
             <div class="column">
                 <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
                 <p>MANGO DE NATA</p>
-                <button class="overlay" onclick="addtocart('MANGO DE NATA (small)', 150)"> MANGO DE NATA (small) - 150 pesos </button>
-                <button class="overlay" onclick="addtocart('MANGO DE NATA (big)', 300)"> MANGO DE NATA (big) - 300 pesos </button>
+                <button class="overlay" onclick="addtocart('MANGO DE NATA (small)', 150)"> MANGO DE NATA (small 500ml) - 150 pesos </button>
+                <button class="overlay" onclick="addtocart('MANGO DE NATA (big)', 300)"> MANGO DE NATA (big 1000ml) - 300 pesos </button>
             </div>
 
 <!--COOLERS-->
            
                 <div class="column">
                     <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
-                    <p>CREMA DE LECHE- 75 pesos</p>
+                    <p>CREMA DE LECHE (750 ml)- 75 pesos</p>
                     <button class="overlay" onclick="addtocart('CREMA DE LETCHE', 75)"> ADD TO LIST </button> 
                 </div>
             
                 <div class="column">
                     <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
-                    <p>MANGO TAPIOCA- 85 pesos</p>
+                    <p>MANGO TAPIOCA (750 ml)- 85 pesos</p>
                     <button class="overlay" onclick="addtocart('MANGO TAPIOCA', 85)"> ADD TO LIST </button> 
                 </div>
             
                 <div class="column">
                     <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
-                    <p>UBE KINEZO- 85 pesos</p>
+                    <p>UBE KINEZO (750 ml)- 85 pesos</p>
                     <button class="overlay" onclick="addtocart('UBE KINEZO', 85)"> ADD TO LIST </button> 
                 </div>
             
                 <div class="column">
                     <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
-                    <p>CHOCO JELLY- 75 pesos</p>
+                    <p>CHOCO JELLY (750 ml)- 75 pesos</p>
                     <button class="overlay" onclick="addtocart('CHOCO JELLY', 75)"> ADD TO LIST </button> 
                 </div>
             
                 <div class="column">
                     <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
-                    <p>MATCHA DE KEME- 75 pesos</p>
+                    <p>MATCHA DE KEME (750 ml)- 75 pesos</p>
                     <button class="overlay" onclick="addtocart('MATCHA DE KEME', 75)"> ADD TO LIST </button> 
                 </div>
             
                 <div class="column">
                     <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
-                    <p>ICE CHOCO LAVA- 80 pesos</p>
+                    <p>ICE CHOCO LAVA (16 oz)- 80 pesos</p>
                     <button class="overlay" onclick="addtocart('ICE CHOCO LAVA', 80)"> ADD TO LIST </button> 
                 </div>
         </div>
@@ -1658,44 +1668,44 @@
 
             <div class="column">
                 <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
-                <p>UBE DE LECHE- 250 pesos</p>
+                <p>UBE DE LECHE (4 inch)- 250 pesos</p>
                 <button class="overlay" onclick="addtocart('UBE DE LECHE', 250)"> ADD TO LIST </button> 
             </div>
             
             <div class="column">
                 <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
-                <p>NUTELLA ROCHER- 300 pesos</p>
+                <p>NUTELLA ROCHER (4 inch) - 300 pesos</p>
                 <button class="overlay" onclick="addtocart('NUTELLA ROCHER', 300)"> ADD TO LIST </button> 
             </div>
             
             <div class="column">
                 <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
-                <p>PISTACHIO KNAFEH- 300 pesos</p>
+                <p>PISTACHIO KNAFEH (4 inch) - 300 pesos</p>
                 <button class="overlay" onclick="addtocart('PISTACHIO KNAFEH', 300)"> ADD TO LIST </button> 
             </div>
             
             <div class="column">
                 <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
-                <p>MOCHA BISCOFF- 300 pesos</p>
+                <p>MOCHA BISCOFF- 300 pesos (4 inch) </p>
                 <button class="overlay" onclick="addtocart('MOCHA BISCOFF', 300)"> ADD TO LIST </button> 
             </div>
             
             <div class="column">
                 <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
-                <p>RED VELVET- 300 pesos</p>
+                <p>RED VELVET- 300 pesos (4 inch)</p>
                 <button class="overlay" onclick="addtocart('RED VELVET', 300)"> ADD TO LIST </button> 
             </div>
 
 <!--NO BAKE CHEESECAKE-->
             <div class="column">
                 <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
-                <p>KITKAT NO BAKE CHEESECAKE- 250 pesos</p>
+                <p>KITKAT NO BAKE CHEESECAKE - 250 pesos</p>
                 <button class="overlay" onclick="addtocart('KITKAT NO BAKE CHEESECAKE', 250)"> ADD TO LIST </button> 
             </div>
             
             <div class="column">
                 <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
-                <p>BISCOFF NO BAKE CHEESECAKE- 250 pesos</p>
+                <p>BISCOFF NO BAKE CHEESECAKE - 250 pesos</p>
                 <button class="overlay" onclick="addtocart('BISCOFF NO BAKE CHEESECAKE', 250)"> ADD TO LIST </button> 
             </div>
             
@@ -1763,20 +1773,6 @@
         </div>
         
         
-        <!--cart-->
-        <div class="fixbtn">
-            <div class="row">
-                <div class="row">
-                    <button class="bahay" onclick="category('home')">🏠<br>home</button>
-                </div>
-                <div class="row">
-                    <button id="cartlogo" class="list">🛍️<br>cart</button>
-                </div>
-                <div class="row">
-                    <button class="location" id="map">ℹ️<br>info</button>
-                </div>
-            </div>
-        </div>
 
         
         
@@ -1787,6 +1783,7 @@
 
 
 </html>
+
 
 
 
