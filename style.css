@@ -40,14 +40,14 @@ body {
   font-size: 16px;
   margin: 6px 8px;
   cursor: pointer;
-  background-color: #FFE1AF;
+  background-color: #5F99AE;
   transition: background-color 1s ease;
   
 }
 
 .btn:hover,
 .overlay:hover {
-  background-color: #E2B59A;
+  background-color: #F5ECE0;
 }
 
 /* ==============================
@@ -60,7 +60,7 @@ body {
   white-space: nowrap;
   gap: 2px;
   top: 0;
-  background-color: #FFE1AF;
+  background-color: #5F99AE;
   padding: 10px 0;
   z-index: 100;
   scrollbar-width: none;
@@ -244,6 +244,7 @@ body {
   }
 
 }
+
 
 
 
