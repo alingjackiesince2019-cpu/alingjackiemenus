@@ -105,9 +105,14 @@ body {
   
 }
 
+.fixbtn{
+   position: fixed;
+   top: 0;
+}
+
 
 .list{
-  position: fixed;
+  position: flex;
   gap:0px;
   align-items:right;
   top: 0;
@@ -124,7 +129,7 @@ body {
  
 }
 .bahay{
-  position: fixed;
+  position: flex;
   gap:50px;
   align-items:right;
   top: 0px;
@@ -142,7 +147,7 @@ body {
 }
 
 .location{
-  position: fixed;
+  position: flex;
   gap:0px;
   align-items:left;
   top: 0;
@@ -225,6 +230,7 @@ body {
   }
 
 }
+
 
 
 
