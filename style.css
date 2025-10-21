@@ -19,7 +19,7 @@ body {
 
 .logo {
   display: grid;
-  place-items: right;
+  place-items: center;
    
 }
 
@@ -228,6 +228,7 @@ body {
   }
 
 }
+
 
 
 
