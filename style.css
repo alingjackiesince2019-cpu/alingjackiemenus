@@ -109,6 +109,7 @@ body {
 .fixbtn{
    position: fixed;
    top: 0;
+   right:0;
 }
 
 
@@ -143,6 +144,12 @@ body {
   margin: 0px 0px;
   cursor: pointer;
  
+}
+
+.loc{
+   position:fixed;
+   top:0;
+   left:0;
 }
 
 .location{
@@ -228,6 +235,7 @@ body {
   }
 
 }
+
 
 
 
