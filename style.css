@@ -54,8 +54,21 @@ body {
    Tabs & Menus
 ============================== */
 
-.tabBar{
-   animation:tabslider 1.5s ease-in-out 1s,shimmer 2s ease-in-out 2.5s;
+.tab {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 2px;
+  top: 0;
+  background-color: #A7C7E7;
+  padding: 10px 0;
+  z-index: 100;
+  scrollbar-width: none;
+   animation:tabslider 1.8s ease-in-out infinite alternate;
+  
+}
+.tab.buttons::-webkit-scrollbar{
+  display: none;
 }
 
 @keyframes tabslider{
@@ -67,38 +80,6 @@ body {
    100%{transform:translateX(0);}
 }
 
-@keyframes shimmer{
-   0%{background:none;}
-   30%{
-      background:linear-gradient(120deg,rgba(255,255,255,0.3)0%,rgba(255,255,255,0)60%);
-      background-size:200% 100%;
-      background-repeat:no-repeat;
-      background-position:100% 0;
-   }
-   60%{
-      background-position:100% 0;
-   }
-   100%{
-      background:none;
-   }
-}
-
-
-.tab {
-  display: flex;
-  overflow-x: auto;
-  white-space: nowrap;
-  gap: 2px;
-  top: 0;
-  background-color: #A7C7E7;
-  padding: 10px 0;
-  z-index: 100;
-  scrollbar-width: none;
-  
-}
-.tab.buttons::-webkit-scrollbar{
-  display: none;
-}
 
 .menu {
   padding-top: 10px;
@@ -274,6 +255,7 @@ body {
   }
 
 }
+
 
 
 
