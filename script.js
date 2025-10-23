@@ -217,6 +217,21 @@ function category(ricemeal) {
 
 }
 
+function category(putocake) {
+  const target = document.getElementById(putocake);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
+
+function category(premium) {
+  const target = document.getElementById(premium);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
 
 
 
