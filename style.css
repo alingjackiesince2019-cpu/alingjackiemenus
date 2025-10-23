@@ -64,7 +64,7 @@ body {
   padding: 10px 0;
   z-index: 100;
   scrollbar-width: none;
-   animation:tabslider 1.8s ease-in-out infinite alternate;
+   animation:tabslider 4s ease-in-out infinite alternate;
   
 }
 .tab.buttons::-webkit-scrollbar{
@@ -73,10 +73,11 @@ body {
 
 @keyframes tabslider{
    0%{transform:translateX(0);}
-   15%{transform:translateX(-25px);}
-   30%{transform:translateX(15px);}
-   45%{transform:translateX(-10px);}
-   60%{transform:translateX(5px);}
+   5%{transform:translateX(-15px);}
+   10%{transform:translateX(15px);}
+   15%{transform:translateX(-10px);}
+   20%{transform:translateX(10px);}
+   25%{transform:translateX(0);}
    100%{transform:translateX(0);}
 }
 
@@ -273,6 +274,7 @@ body {
   }
 
 }
+
 
 
 
