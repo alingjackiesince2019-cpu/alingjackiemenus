@@ -112,11 +112,117 @@ function category(cakes) {
 
 }
 
+function category(partybox) {
+  const target = document.getElementById(partybox);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
 
+}
 
+function category(partytraychicken) {
+  const target = document.getElementById(partytraychicken);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
 
+}
 
+function category(partytraypork) {
+  const target = document.getElementById(partytraypork);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
 
+}
+
+function category(partytraybeef) {
+  const target = document.getElementById(partytraybeef);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
+
+function category(partytraypasta) {
+  const target = document.getElementById(partytraypasta);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
+
+function category(partytrayveggies) {
+  const target = document.getElementById(partytrayveggies);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
+
+function category(partytrayseafood) {
+  const target = document.getElementById(partytrayseafood);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
+
+function category(valuemeal) {
+  const target = document.getElementById(valuemeal);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
+
+function category(muffin) {
+  const target = document.getElementById(muffin);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
+
+function category(burgers) {
+  const target = document.getElementById(burgers);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
+
+function category(sandwichandwaffle) {
+  const target = document.getElementById(sandwichandwaffle);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
+
+function category(grahambar) {
+  const target = document.getElementById(grahambar);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
+
+function category(chaofan) {
+  const target = document.getElementById(chaofan);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
+
+function category(ricemeal) {
+  const target = document.getElementById(ricemeal);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
 
 
 
