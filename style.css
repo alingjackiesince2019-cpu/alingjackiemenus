@@ -40,7 +40,7 @@ body {
   font-size: 16px;
   margin: 6px 8px;
   cursor: pointer;
-  background-color: #5F99AE;
+  background-color: #A7C7E7;
   transition: background-color 0.5s ease;
   
 }
@@ -60,7 +60,7 @@ body {
   white-space: nowrap;
   gap: 2px;
   top: 0;
-  background-color: #5F99AE;
+  background-color: #A7C7E7;
   padding: 10px 0;
   z-index: 100;
   scrollbar-width: none;
@@ -175,7 +175,7 @@ body {
 }
 
 .b{
-   background-color:#336D82;
+   background-color:#A7C7E7;
 }
 
 
@@ -244,6 +244,7 @@ body {
   }
 
 }
+
 
 
 
