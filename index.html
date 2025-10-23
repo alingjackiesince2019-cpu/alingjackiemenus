@@ -31,7 +31,7 @@
         
         <div class="logo">
             
-            <img src="https://i.postimg.cc/R0bm52cG/logomo.png"; width="15%" height="40%" style="cursor:pointer">
+            <img src="https://i.postimg.cc/R0bm52cG/logomo.png"; width="15%" height="60%" style="cursor:pointer">
         
         </div>
         <!--SEARCH-->
@@ -55,6 +55,7 @@
         <div class="line"></div>
         <div class="tab">
             <button class="btn"; onclick="category('bundle')">BUNDLES</button>
+            <button class="btn"; onclick="category('partybox')">PARTY BOX</button>
             <button class="btn"; onclick="category('bilao')">ALA CARTE(BILAO)</button>
             <button class="btn"; onclick="category('partytray')">PARTY TRAY</button>
             <button class="btn"; onclick="category('solo')">SOLO</button>
@@ -198,8 +199,33 @@
                 <button class="overlay" onclick="addtocart('PASSION', 1500)"> ADD TO LIST </button>
             </div>
 
-            <!--party box -->
+            <div class="column">
+                <img src="https://i.postimg.cc/9McgDSv8/positive.jpg" style="width:100%">
+                <p>BUNDLE POSITIVE - 1000 pesos</p>
+                <button class="overlay" onclick="addtocart('POSITIVE', 1000)"> ADD TO LIST </button>
+            </div>
 
+            <div class="column">
+                <img src="https://i.postimg.cc/1ty78TL7/princess.jpg" style="width:100%">
+                <p>BUNDLE PRINCESS - 1200 pesos</p>
+                <button class="overlay" onclick="addtocart('PRINCESS', 1200)"> ADD TO LIST </button>
+            </div>
+
+            <div class="column">
+                <img src="https://i.postimg.cc/QtjYFPRy/samantha.jpg" style="width:100%">
+                <p>BUNDLE SAMANTHA - 4000 pesos</p>
+                <button class="overlay" onclick="addtocart('SAMANTHA', 4000)"> ADD TO LIST </button>
+            </div>
+
+            
+            
+        </div>
+
+        
+            <!--party box -->
+        <div class="row">
+            <h1 id="partybox">PARTY BOX</h1>
+            
             <div class="column">
                 <img src="https://i.postimg.cc/xdY1CGmr/pb-amboy.jpg" style="width:100%">
                 <p>PARTY BOX AMBOY (16x16) - 2000 pesos</p>
@@ -272,25 +298,6 @@
                 <button class="overlay" onclick="addtocart('PB SAWADEKA', 2000)"> ADD TO LIST </button>
             </div>
 
-            <div class="column">
-                <img src="https://i.postimg.cc/9McgDSv8/positive.jpg" style="width:100%">
-                <p>BUNDLE POSITIVE - 1000 pesos</p>
-                <button class="overlay" onclick="addtocart('POSITIVE', 1000)"> ADD TO LIST </button>
-            </div>
-
-            <div class="column">
-                <img src="https://i.postimg.cc/1ty78TL7/princess.jpg" style="width:100%">
-                <p>BUNDLE PRINCESS - 1200 pesos</p>
-                <button class="overlay" onclick="addtocart('PRINCESS', 1200)"> ADD TO LIST </button>
-            </div>
-
-            <div class="column">
-                <img src="https://i.postimg.cc/QtjYFPRy/samantha.jpg" style="width:100%">
-                <p>BUNDLE SAMANTHA - 4000 pesos</p>
-                <button class="overlay" onclick="addtocart('SAMANTHA', 4000)"> ADD TO LIST </button>
-            </div>
-
-
         </div>
 
         <!--BILAO-->
@@ -353,12 +360,6 @@
             </div>
 
             
-             <div class="column">
-                <img src="https://i.postimg.cc/rmqZDbvY/sampler-kakanin.jpg" style="width:100%">
-                <p>SAMPLER 4in1 KAKANIN - 300 pesos</p>
-                <button class="overlay" onclick="addtocart('SAMPLER', 300)"> ADD TO LIST </button>
-            </div>
-
             <div class="column">
                 <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
                 <p>50pcs PUTO CHEESE CUPCAKES - 400 pesos</p>
@@ -913,13 +914,20 @@
         <div class="row">
 
             <h1 id="solo">SOLO ORDER/RICE MEALS</h1>
-            
-            <div class="column">
-                <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
-                <p>CHAOFAN CHEESY PORK SHANGHAI W/ SWEET AND SOUR CHILI SAUCE(W/rice) - 80 pesos</p>
-                <button class="overlay" onclick="addtocart('CHAOFAN CHEESY PORK SHANGHAI W/ SWEET AND SOUR CHILI SAUCE', 80)"> ADD TO LIST </button> 
+
+             <div class="column">
+                <img src="https://i.postimg.cc/rmqZDbvY/sampler-kakanin.jpg" style="width:100%">
+                <p>SAMPLER 4in1 KAKANIN - 300 pesos</p>
+                <button class="overlay" onclick="addtocart('SAMPLER', 300)"> ADD TO LIST </button>
             </div>
 
+            <div class="row"> RICE MEALS
+                <div class="column">
+                    <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
+                    <p>CHAOFAN CHEESY PORK SHANGHAI W/ SWEET AND SOUR CHILI SAUCE(W/rice) - 80 pesos</p>
+                    <button class="overlay" onclick="addtocart('CHAOFAN CHEESY PORK SHANGHAI W/ SWEET AND SOUR CHILI SAUCE', 80)"> ADD TO LIST </button> 
+                </div>
+            </div>
             <div class="column">
                 <img src="https://i.postimg.cc/4db05ww4/not-avail.png" style="width:100%">
                 <p>CHAOFAN FRIED SIOMAI W/ TOYOMANSI SAUCE(W/rice) - 80 pesos</p>
@@ -1792,6 +1800,7 @@
 
 
 </html>
+
 
 
 
