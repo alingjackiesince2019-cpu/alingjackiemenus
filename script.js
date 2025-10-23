@@ -184,7 +184,7 @@ function category(muffin) {
 
 }
 
-function category(burgers) {
+function category(burger) {
   const target = document.getElementById(burgers);
   if (target) {
     target.scrollIntoView({ behavior: 'smooth' });
@@ -208,13 +208,6 @@ function category(grahambar) {
 
 }
 
-function category(chaofan) {
-  const target = document.getElementById(chaofan);
-  if (target) {
-    target.scrollIntoView({ behavior: 'smooth' });
-  }
-
-}
 
 function category(ricemeal) {
   const target = document.getElementById(ricemeal);
@@ -223,6 +216,7 @@ function category(ricemeal) {
   }
 
 }
+
 
 
 
