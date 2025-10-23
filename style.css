@@ -64,7 +64,7 @@ body {
   padding: 10px 0;
   z-index: 100;
   scrollbar-width: none;
-   animation:tabslider 4s ease-in-out infinite alternate;
+   animation:tabslider 8s ease-in-out infinite alternate;
   
 }
 .tab.buttons::-webkit-scrollbar{
@@ -274,6 +274,7 @@ body {
   }
 
 }
+
 
 
 
