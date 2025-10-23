@@ -233,6 +233,14 @@ function category(premium) {
 
 }
 
+function category(bar) {
+  const target = document.getElementById(bar);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
+
 
 
 
