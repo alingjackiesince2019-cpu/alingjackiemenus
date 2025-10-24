@@ -23,6 +23,13 @@ body {
    
 }
 
+img {
+  /* Your CSS properties here */
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
 /* ==============================
    Buttons and Overlays
 ============================== */
@@ -274,6 +281,7 @@ body {
   }
 
 }
+
 
 
 
