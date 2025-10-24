@@ -81,6 +81,25 @@ body {
    100%{transform:translateX(0);}
 }
 
+.ads{
+   height:30px;
+   width:200px;
+   animation:adslide 1s ease-in-out infinite alternate;
+}
+@keyframes adslide{
+   0%{transform:translateX(0);}
+   10%{transform:translateX(-100px);}
+   20%{transform:translateX(200px);}
+   30%{transform:translateX(-300px);}
+   40%{transform:translateX(-400px);}
+   50%{transform:translateX(-500px);}
+   60%{transform:translateX(0);}
+   100%{transform:translateX(0);}
+}
+
+
+
+
 
 .menu {
   padding-top: 10px;
@@ -274,6 +293,7 @@ body {
   }
 
 }
+
 
 
 
