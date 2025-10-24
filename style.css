@@ -23,13 +23,6 @@ body {
    
 }
 
-img {
-  /* Your CSS properties here */
-  width: 80%;
-  height: 50%;
-  margin-bottom: 10px;
-}
-
 /* ==============================
    Buttons and Overlays
 ============================== */
@@ -281,6 +274,7 @@ img {
   }
 
 }
+
 
 
 
