@@ -59,7 +59,7 @@
     <h5 style="text-align:center">🫰THANK YOU SUKIE🫰</h5>
     <ul id="cartItems"></ul>
     <p id="cartTotal"><strong>Total:</strong> ₱0</p>
-    <button id="clearCartBtn" >Clear List</button><br><br>
+    <button id="clearCartBtn" onclick="localStorage.removeItem('cart').location.reload();play()" >Clear List</button><br><br>
    <button onclick="takeScreenshot()">📸SCREEN SHOT(for online orders)</button><br><br>
    <button onclick="window.print();player();">🖨️PRINT(for walk-in/dine-in)</button>
     <!--<button id="backBtn" onclick="window.close()">Close</button>-->
@@ -71,54 +71,47 @@
     <script>
      document.addEventListener("DOMContentLoaded", () => {
       let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
+      
       const list = document.getElementById("cartItems");
       const totalEl = document.getElementById("cartTotal");
-
+      
       function updateCart() {
        list.innerHTML = "";
        let total = 0;
-
+       
        if (cart.length === 0) {
         list.innerHTML = "<li>Your cart is empty.</li>";
         totalEl.textContent = "Total: ₱0";
         return;
-      }
-
-      cart.forEach((item, index) => {
-      const li = document.createElement("li");
-      li.textContent = `${item.quantity}x ${item.name} — ₱${item.price * item.quantity}`;
-      total += item.price * item.quantity;
-
-      const removeBtn = document.createElement("button");
-      removeBtn.textContent = "✖";
-      removeBtn.onclick = () => {
+       }
        
-       cart.splice(index, 1);
-       localStorage.setItem("cart", JSON.stringify(cart));
-       updateCart();
-     };
+       cart.forEach((item, index) => {
+        const li = document.createElement("li");
+        li.textContent = `${item.quantity}x ${item.name} — ₱${item.price * item.quantity}`;
+        total += item.price * item.quantity;
+        
+        const removeBtn = document.createElement("button");
+        removeBtn.textContent = "✖";
+        removeBtn.onclick = () => {
+         cart.splice(index, 1);
+         localStorage.setItem("cart", JSON.stringify(cart));
+         updateCart();
+        };
+        
+        li.appendChild(removeBtn);
+        list.appendChild(li);
+       });
+       
+       totalEl.textContent = `Total: ₱${total}`;
+      }
+      updateCart();
+     });
 
-      li.appendChild(removeBtn);
-      list.appendChild(li);
-    });
-
-    totalEl.textContent = `Total: ₱${total}`;
-  }
 
      
-      document.getElementById('clearCartBtn').addEventListener('click', () => {
-        cart = [];
-        localStorage.setItem('cart', JSON.stringify(cart));
-        updateCart();
-        const s=document.getElementById("btnclick");
-        s.currentTime = 0;
-        s.play();
+     
 
-      });
-
-      updateCart();
-
+     
      function takeScreenshot() {
       const s=document.getElementById("btncleck");
       s.currentTime = 0;
@@ -149,6 +142,7 @@
     </script>
   </body>
 </html>
+
 
 
 
