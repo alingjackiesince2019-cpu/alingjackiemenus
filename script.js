@@ -55,6 +55,18 @@ function play(){
   s.currentTime = 0;
   s.play();  
 }
+function playshop(){
+  const s=document.getElementById("btnshop");
+  s.currentTime = 0;
+  s.play();  
+}
+function playwhoosh(){
+  const s=document.getElementById("btnwhoosh");
+  s.currentTime = 0;
+  s.play();  
+}
+
+
 
 
 
@@ -253,6 +265,7 @@ function category(bar) {
   }
 
 }
+
 
 
 
