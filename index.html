@@ -16,19 +16,19 @@
         <!--cart,search,info-->
         <div class="fixbtn">
             <div class="row">
-                <button id="cartlogo" class="list"><strong>🛍️<br>cart</strong></button>
+                <button id="cartlogo" class="list" onclick="play()"><strong>🛍️<br>cart</strong></button>
             </div>
             <div class="row">
-                <button class="bahay" onclick="category('home')"><strong>🔍<br>search</strong></button>
+                <button class="bahay" onclick="category('home');play();"><strong>🔍<br>search</strong></button>
             </div>
             
             <div class="row">
-                <button class="bar" onclick="category('bar')"><strong>🔺<br>TOP</strong></button>
+                <button class="bar" onclick="category('bar');play();"><strong>🔺<br>TOP</strong></button>
             </div>            
          </div>
         
         <div class="loc">
-            <button class="location" id="map"><strong>ℹ️<br>info</strong></button>
+            <button class="location" id="map" onclick="play()"><strong>ℹ️<br>info</strong></button>
         </div>
         <div></div>
 
@@ -68,9 +68,9 @@
         <div class="line"></div>
         
         <div class="tab">
-            <button class="btn"; onclick="category('bundle')">BUNDLES</button>
-            <button class="btn"; onclick="category('partybox')">PARTY BOX</button>
-            <button class="btn"; onclick="category('bilao')">ALA CARTE(BILAO)</button>
+            <button class="btn"; onclick="category('bundle');play();">BUNDLES</button>
+            <button class="btn"; onclick="category('partybox');play();">PARTY BOX</button>
+            <button class="btn"; onclick="category('bilao');play();">ALA CARTE(BILAO)</button>
             <button class="btn"; onclick="category('partytray')">PARTY TRAY RICE/OTHERS</button>
             <button class="btn"; onclick="category('partytraychicken')">PARTY TRAY CHICKEN</button>
             <button class="btn"; onclick="category('partytraypork')">PARTY TRAY PORK</button>
@@ -2152,6 +2152,7 @@
 
 
 </html>
+
 
 
 
