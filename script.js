@@ -2,6 +2,10 @@
 
 // Add item to localStorage cart
 function addtocart(name, price) {
+  const s=document.getElementById("btnclick");
+  s.currentTime = 0;
+  s.play();
+
   
   // Get existing cart or create an empty one
   let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -14,10 +18,6 @@ function addtocart(name, price) {
   localStorage.setItem('cart', JSON.stringify(cart));
 
   alert(`${name} added to cart!`);
-
-  const s=document.getElementById("btnclick");
-  s.currentTime = 0;
-  s.play();
   
 }
 
@@ -55,14 +55,14 @@ document.getElementById("search").addEventListener("input",function(){
 // tab bar
 
 function category(bundle) {  
+  const s=document.getElementById("btnclick");
+  s.currentTime = 0;
+  s.play();
+  
   const target = document.getElementById(bundle);
   if (target) {
     target.scrollIntoView({ behavior: 'smooth' });
   }
-  const s=document.getElementById("btnclick");
-  s.currentTime = 0;
-  s.play();
-
 }
 
 function category(bilao) {
@@ -249,6 +249,7 @@ function category(bar) {
   }
 
 }
+
 
 
 
