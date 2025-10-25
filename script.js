@@ -49,6 +49,12 @@ document.getElementById("search").addEventListener("input",function(){
 })
 
 
+//play button
+function play(){
+  const s=document.getElementById("btnclick");
+  s.currentTime = 0;
+  s.play();  
+}
 
 
 
@@ -61,6 +67,7 @@ function category(bundle) {
 
   }
 }
+
 
 function category(bilao) {
   const target = document.getElementById(bilao);
@@ -246,6 +253,7 @@ function category(bar) {
   }
 
 }
+
 
 
 
