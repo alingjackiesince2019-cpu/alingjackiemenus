@@ -64,7 +64,9 @@
    <button onclick="window.print();player();">🖨️PRINT(for walk-in/dine-in)🖨️</button>
     <!--<button id="backBtn" onclick="window.close()">Close</button>-->
    <br><br>
-   <button onclick="play()"> <a href="https://www.facebook.com/alingjackieskitchen/">📬 MESSAGE US TO PROCEED YOUR ORDER</a> </button>
+   <button onclick="play()"> <a href="https://www.facebook.com/alingjackieskitchen/">📬 MESSAGE US TO PROCEED YOUR TO ORDER</a> </button>
+   <h2><strong>NOTE:</strong><br>1)You need to message us at our facebook page to proceed to your order.<br>2)Once "screen shot button" is press, a photo of your list will save to your gallery.<br>
+   3)Send the photo to our facebook page to SETTLE PAYMENT and LINE UP your order.</h2>
 
     <script>
      
@@ -86,7 +88,10 @@
         } else {
           cart.forEach((item, index) => {
             const li = document.createElement('li');
-            li.textContent = `${item.name} — ₱${item.price}`;
+            //li.textContent = `${item.name} — ₱${item.price}`;
+           li.textContent = '$(item.quantity)x $
+           {item.name}-${item.price*item.quantity}
+           //ADDED----------------------------------------------------------------------------
 
             const removeBtn = document.createElement('button');
             removeBtn.textContent = '❌';
@@ -146,6 +151,7 @@
     </script>
   </body>
 </html>
+
 
 
 
