@@ -52,15 +52,16 @@
     </style>
   </head>
   <body>
-   <audio id="btncleck" src="click.mp3" preload="auto"></audio>
+   <audio id="btncleck" src="Shot.mp3" preload="auto"></audio>
    <audio id="btnclick" src="Btnpress.mp3" preload="auto"></audio>
+   <audio id="btnprint" src="Printer.mp3" preload="auto"></audio>
     <h5 style="text-align:center"><strong>⚠️FOR ONLINE ORDERS⚠️</strong><br>TAKE A SCREENSHOT OF YOUR LIST AND<br> MESSAGE US AT<br> <a href="https://www.facebook.com/alingjackieskitchen/">ALING JACKIE'S KITCHEN</a><br> TO PROCEED TO YOUR ORDER</h5>
     <h5 style="text-align:center">🫰THANK YOU SUKIE🫰</h5>
     <ul id="cartItems"></ul>
     <p id="cartTotal"><strong>Total:</strong> ₱0</p>
     <button id="clearCartBtn" >Clear List</button><br><br>
    <button onclick="takeScreenshot()">📸SCREEN SHOT(for online orders)📸</button><br><br>
-   <button onclick="window.print()">🖨️PRINT(for walk-in/dine-in)🖨️</button>
+   <button onclick="window.print();player();">🖨️PRINT(for walk-in/dine-in)🖨️</button>
     <!--<button id="backBtn" onclick="window.close()">Close</button>-->
    <br><br>
    <button onclick="play()"> <a href="https://www.facebook.com/alingjackieskitchen/">📬 MESSAGE US TO PROCEED YOUR ORDER</a> </button>
@@ -134,11 +135,18 @@
       s.currentTime = 0;
       s.play();      
      }
-  
+     function player(){
+      const s=document.getElementById("btnprint");
+      s.currentTime = 0;
+      s.play();      
+     }
+
+     
      
     </script>
   </body>
 </html>
+
 
 
 
