@@ -63,7 +63,7 @@
    <button onclick="window.print()">🖨️PRINT(for walk-in/dine-in)🖨️</button>
     <!--<button id="backBtn" onclick="window.close()">Close</button>-->
    <br><br>
-   <button> <a href="https://www.facebook.com/alingjackieskitchen/">📬 MESSAGE US TO PROCEED YOUR ORDER</a> </button>
+   <button onclick="play()"> <a href="https://www.facebook.com/alingjackieskitchen/">📬 MESSAGE US TO PROCEED YOUR ORDER</a> </button>
 
     <script>
      
@@ -128,11 +128,18 @@
        });
       alert("⚠️SEND YOUR SCREEN SHOT ORDER TO OUR MESSENGER PROVIDED BELOW TO PROCEED TO YOUR ORDER⚠️");
      }
+
+     function play(){
+      const s=document.getElementById("btncleck");
+      s.currentTime = 0;
+      s.play();      
+     }
   
      
     </script>
   </body>
 </html>
+
 
 
 
