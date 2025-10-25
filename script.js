@@ -266,6 +266,15 @@ function category(bar) {
 
 }
 
+function category(primeputo) {
+  const target = document.getElementById(primeputo);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
+
+
 
 
 
