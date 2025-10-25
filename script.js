@@ -2,7 +2,7 @@
 
 // Add item to localStorage cart
 function addtocart(name, price) {
-  const s=document.getElementById(btnclick);
+  const s=document.getElementById("btnclick");
   s.currentTime = 0;
   s.play();
 
@@ -55,7 +55,7 @@ document.getElementById("search").addEventListener("input",function(){
 // tab bar
 
 function category(bundle) {  
-  const s=document.getElementById(btnclick);
+  const s=document.getElementById("btnclick");
   const target = document.getElementById(bundle);
   s.currentTime = 0;
   s.play();
@@ -248,6 +248,7 @@ function category(bar) {
   }
 
 }
+
 
 
 
