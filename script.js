@@ -10,6 +10,14 @@ function addtocart(name, price) {
   // Get existing cart or create an empty one
   let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
+  //ADDED-------------------------------------------------------------------
+  const existing = cart.find(item=>item.name===name);
+  if(existing){
+    existing.quantity++;  
+  }else{
+    cart.push({name,price,quantity:1})
+  }
+
   
   // Add new item
   cart.push({ name, price });
@@ -273,6 +281,7 @@ function category(primeputo) {
   }
 
 }
+
 
 
 
