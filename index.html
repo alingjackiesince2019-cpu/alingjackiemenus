@@ -11,19 +11,21 @@
 
         <!--BUTTON CLICK-->
         <audio id="btnclick" src="Btnpress.mp3" preload="auto"></audio>
+        <audio id="btnwoosh" src="Whoosh.mp3" preload="auto"></audio>
+        <audio id="btnshop" src="Shoppingbag.mp3" preload="auto"></audio>
 
         
         <!--cart,search,info-->
         <div class="fixbtn">
             <div class="row">
-                <button id="cartlogo" class="list" onclick="play()"><strong>🛍️<br>cart</strong></button>
+                <button id="cartlogo" class="list" onclick="playshop()"><strong>🛍️<br>cart</strong></button>
             </div>
             <div class="row">
                 <button class="bahay" onclick="category('home');play();"><strong>🔍<br>search</strong></button>
             </div>
             
             <div class="row">
-                <button class="bar" onclick="category('bar');play();"><strong>🔺<br>TOP</strong></button>
+                <button class="bar" onclick="category('bar');playwhoosh();"><strong>🔺<br>TOP</strong></button>
             </div>            
          </div>
         
@@ -68,29 +70,29 @@
         <div class="line"></div>
         
         <div class="tab">
-            <button class="btn"; onclick="category('bundle');play();">BUNDLES</button>
-            <button class="btn"; onclick="category('partybox');play();">PARTY BOX</button>
-            <button class="btn"; onclick="category('bilao');play();">ALA CARTE(BILAO)</button>
-            <button class="btn"; onclick="category('partytray')">PARTY TRAY RICE/OTHERS</button>
-            <button class="btn"; onclick="category('partytraychicken')">PARTY TRAY CHICKEN</button>
-            <button class="btn"; onclick="category('partytraypork')">PARTY TRAY PORK</button>
-            <button class="btn"; onclick="category('partytraybeef')">PARTY TRAY BEEF</button>
-            <button class="btn"; onclick="category('partytrayveggies')">PARTY TRAY VEGGIES</button>
-            <button class="btn"; onclick="category('partytraypasta')">PARTY TRAY PASTA</button>
-            <button class="btn"; onclick="category('partytrayseafood')">PARTY TRAY SEAFOOD</button>
-            <button class="btn"; onclick="category('ricemeal')">RICE MEAL</button>
-            <button class="btn"; onclick="category('solo')">SOLO</button>
-            <button class="btn"; onclick="category('valuemeal')">VALUE MEALS</button>
-            <button class="btn"; onclick="category('premium')">PUTO CUPCAKE</button>
-            <button class="btn"; onclick="category('muffin')">MUFFINS/LOAF</button>
-            <button class="btn"; onclick="category('burger')">BURGERS/OTHERS</button>
-            <button class="btn"; onclick="category('sandwichandwaffle')">SANDWICH AND WAFFLE</button>
-            <button class="btn"; onclick="category('grahambar')">GRAHAM BAR</button>
-            <button class="btn"; onclick="category('dessert')">DESSERTS</button>
-            <button class="btn"; onclick="category('drinks')">DRINKS/COOLERS</button>
-            <button class="btn"; onclick="category('cakes')">CAKES</button>
-            <button class="btn"; onclick="category('putocake')">PUTO CAKE & PUTO NUM. CAKE</button>
-            <button class="btn"; onclick="category('what')">WHATS NEW</button>
+            <button class="btn"; onclick="category('bundle');playwhoosh();">BUNDLES</button>
+            <button class="btn"; onclick="category('partybox');playwhoosh();">PARTY BOX</button>
+            <button class="btn"; onclick="category('bilao');playwhoosh();">ALA CARTE(BILAO)</button>
+            <button class="btn"; onclick="category('partytray');playwhoosh();">PARTY TRAY RICE/OTHERS</button>
+            <button class="btn"; onclick="category('partytraychicken');playwhoosh();">PARTY TRAY CHICKEN</button>
+            <button class="btn"; onclick="category('partytraypork');playwhoosh();">PARTY TRAY PORK</button>
+            <button class="btn"; onclick="category('partytraybeef');playwhoosh();">PARTY TRAY BEEF</button>
+            <button class="btn"; onclick="category('partytrayveggies');playwhoosh();">PARTY TRAY VEGGIES</button>
+            <button class="btn"; onclick="category('partytraypasta');playwhoosh();">PARTY TRAY PASTA</button>
+            <button class="btn"; onclick="category('partytrayseafood');playwhoosh();">PARTY TRAY SEAFOOD</button>
+            <button class="btn"; onclick="category('ricemeal');playwhoosh();">RICE MEAL</button>
+            <button class="btn"; onclick="category('solo');playwhoosh();">SOLO</button>
+            <button class="btn"; onclick="category('valuemeal');playwhoosh();">VALUE MEALS</button>
+            <button class="btn"; onclick="category('premium';playwhoosh();)">PUTO CUPCAKE</button>
+            <button class="btn"; onclick="category('muffin');playwhoosh();">MUFFINS/LOAF</button>
+            <button class="btn"; onclick="category('burger');playwhoosh();">BURGERS/OTHERS</button>
+            <button class="btn"; onclick="category('sandwichandwaffle');playwhoosh();">SANDWICH AND WAFFLE</button>
+            <button class="btn"; onclick="category('grahambar');playwhoosh();">GRAHAM BAR</button>
+            <button class="btn"; onclick="category('dessert');playwhoosh();">DESSERTS</button>
+            <button class="btn"; onclick="category('drinks');playwhoosh();">DRINKS/COOLERS</button>
+            <button class="btn"; onclick="category('cakes');playwhoosh();">CAKES</button>
+            <button class="btn"; onclick="category('putocake');playwhoosh();">PUTO CAKE & PUTO NUM. CAKE</button>
+            <button class="btn"; onclick="category('what');playwhoosh();">WHATS NEW</button>
         </div>
         
         <div class="line"></div>
@@ -2152,6 +2154,7 @@
 
 
 </html>
+
 
 
 
