@@ -20,7 +20,7 @@ function addtocart(name, price) {
 
   
   // Add new item
-  cart.push({ name, price });
+ //needed cart.push({ name, price });
 
   // Save back to localStorage
   localStorage.setItem('cart', JSON.stringify(cart));
@@ -281,6 +281,7 @@ function category(primeputo) {
   }
 
 }
+
 
 
 
