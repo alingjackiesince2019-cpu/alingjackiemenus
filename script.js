@@ -51,19 +51,19 @@ document.getElementById("search").addEventListener("input",function(){
 
 //play button
 function play(){
-  const s=document.getElementById("btnclick");
-  s.currentTime = 0;
-  s.play();  
+  const soundclick=document.getElementById("btnclick");
+  soundclick.currentTime = 0;
+  soundclick.play();  
 }
 function playshop(){
-  const s=document.getElementById("btnshop");
-  s.currentTime = 0;
-  s.play();  
+  const soundshop=document.getElementById("btnshop");
+  soundshop.currentTime = 0;
+  soundshop.play();  
 }
 function playwhoosh(){
-  const s=document.getElementById("btnwhoosh");
-  s.currentTime = 0;
-  s.play();  
+  const soundwhoosh=document.getElementById("btnwhoosh");
+  soundwhoosh.currentTime = 0;
+  soundwhoosh.play();  
 }
 
 
@@ -265,6 +265,7 @@ function category(bar) {
   }
 
 }
+
 
 
 
