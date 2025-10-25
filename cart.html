@@ -69,46 +69,44 @@
    3)Send the photo to our facebook page to SETTLE PAYMENT and LINE UP your order.</h3>
 
     <script>
-     
-     
-      // Load cart data from localStorage
-      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+     document.addEventListener("DOMContentLoaded", () => {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-      function calculateTotal() {
-        return cart.reduce((sum, item) => sum + item.price, 0);
-      }
+      const list = document.getElementById("cartItems");
+      const totalEl = document.getElementById("cartTotal");
 
       function updateCart() {
-        const list = document.getElementById('cartItems');
-        const total = document.getElementById('cartTotal');
-        list.innerHTML = '';
+       list.innerHTML = "";
+       let total = 0;
 
-        if (cart.length === 0) {
-          list.innerHTML = '<li>Your cart is empty.</li>';
-        } else {
-          cart.forEach((item, index) => {
-            const li = document.createElement('li');
-            //li.textContent = `${item.name} — ₱${item.price}`;
-            li.textContent = '$(item.quantity)x $
-            {item.name}-${item.price*item.quantity}
-           //ADDED----------------------------------------------------------------------------
-
-            const removeBtn = document.createElement('button');
-            removeBtn.textContent = '❌';
-            removeBtn.onclick = () => {
-              cart.splice(index, 1);
-              localStorage.setItem('cart', JSON.stringify(cart));
-              updateCart();
-            };
-
-            li.appendChild(removeBtn);
-            list.appendChild(li);
-          });
-        }
-
-        total.innerHTML = `<strong>Total:</strong> ₱${calculateTotal()}`;
+       if (cart.length === 0) {
+        list.innerHTML = "<li>Your cart is empty.</li>";
+        totalEl.textContent = "Total: ₱0";
+        return;
       }
 
+      cart.forEach((item, index) => {
+      const li = document.createElement("li");
+      li.textContent = `${item.quantity}x ${item.name} — ₱${item.price * item.quantity}`;
+      total += item.price * item.quantity;
+
+      const removeBtn = document.createElement("button");
+      removeBtn.textContent = "✖";
+      removeBtn.onclick = () => {
+       
+       cart.splice(index, 1);
+       localStorage.setItem("cart", JSON.stringify(cart));
+       updateCart();
+     };
+
+      li.appendChild(removeBtn);
+      list.appendChild(li);
+    });
+
+    totalEl.textContent = `Total: ₱${total}`;
+  }
+
+     
       document.getElementById('clearCartBtn').addEventListener('click', () => {
         cart = [];
         localStorage.setItem('cart', JSON.stringify(cart));
@@ -151,6 +149,7 @@
     </script>
   </body>
 </html>
+
 
 
 
