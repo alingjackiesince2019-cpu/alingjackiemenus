@@ -50,6 +50,10 @@ document.getElementById("search").addEventListener("input",function(){
 // tab bar
 
 function category(bundle) {
+  const s=document.getElementById("btnclick");
+  s.currentTime = 0;
+  s.play();
+  
   const target = document.getElementById(bundle);
   if (target) {
     target.scrollIntoView({ behavior: 'smooth' });
@@ -240,6 +244,7 @@ function category(bar) {
   }
 
 }
+
 
 
 
