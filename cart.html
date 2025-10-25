@@ -52,6 +52,8 @@
     </style>
   </head>
   <body>
+   <audio id="btncleck" src="click.mp3" preload="auto"></audio>
+   <audio id="btnclick" src="Btnpress.mp3" preload="auto"></audio>
     <h5 style="text-align:center"><strong>⚠️FOR ONLINE ORDERS⚠️</strong><br>TAKE A SCREENSHOT OF YOUR LIST AND<br> MESSAGE US AT<br> <a href="https://www.facebook.com/alingjackieskitchen/">ALING JACKIE'S KITCHEN</a><br> TO PROCEED TO YOUR ORDER</h5>
     <h5 style="text-align:center">🫰THANK YOU SUKIE🫰</h5>
     <ul id="cartItems"></ul>
@@ -105,11 +107,18 @@
         cart = [];
         localStorage.setItem('cart', JSON.stringify(cart));
         updateCart();
+        const s=document.getElementById("btnclick");
+        s.currentTime = 0;
+        s.play();
+
       });
 
       updateCart();
 
      function takeScreenshot() {
+      const s=document.getElementById("btncleck");
+      s.currentTime = 0;
+      s.play();
       
       html2canvas(document.body).then(canvas => {
        const link = document.createElement('a');
@@ -124,6 +133,7 @@
     </script>
   </body>
 </html>
+
 
 
 
