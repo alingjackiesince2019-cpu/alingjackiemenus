@@ -54,13 +54,13 @@ document.getElementById("search").addEventListener("input",function(){
 
 // tab bar
 
-function category(bundle) {
-  const s=document.getElementById("btnclick");
-  const target = document.getElementById(bundle);
+function category(bundle) {  
+  const target = document.getElementById(bundle,"btnclick");
   if (target) {
     target.scrollIntoView({ behavior: 'smooth' });
     s.currentTime = 0;
     s.play();
+
   }
 }
 
@@ -248,6 +248,7 @@ function category(bar) {
   }
 
 }
+
 
 
 
