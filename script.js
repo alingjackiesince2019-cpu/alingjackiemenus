@@ -43,6 +43,12 @@ document.getElementById('map').addEventListener('click', () => {
   window.location.href='location.html'; 
 });
 
+// open tutorial
+document.getElementById('tutorial').addEventListener('click', () => {
+  window.location.href='tutorial.html'; 
+});
+
+
 
 // search bar
 
@@ -281,6 +287,7 @@ function category(primeputo) {
   }
 
 }
+
 
 
 
