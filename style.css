@@ -228,7 +228,7 @@ body {
   }
 
   .btn, .overlay {
-    width: 50%;
+    width: 100%;
     padding: 12px;
     font-size: 14px;
     margin: 8px 0;
@@ -273,6 +273,7 @@ body {
   }
 
 }
+
 
 
 
