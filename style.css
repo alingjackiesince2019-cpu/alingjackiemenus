@@ -243,20 +243,20 @@ body {
   }
 
   .column {
-    width: 100%;
-    float: none;
-    padding: 10px 0;
+     width: 100%;
+     float: none;
+     padding: 10px 0;
   }
 
   .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
   }
 
   .tab {
-    position: relative;
-    top: auto;
+     position: relative;
+     top: auto;
   }
 }
 
@@ -264,15 +264,16 @@ body {
 @media (max-width: 480px) {
 
   .btn, .overlay {
-    font-size: 12px;
-    padding: 10px;
+     font-size: 12px;
+     padding: 10px;
   }
 
   body {
-    font-size: 14px;
+     font-size: 14px;
   }
 
 }
+
 
 
 
