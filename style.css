@@ -239,10 +239,7 @@ body {
 
 
   .row {
-    /*display: block;*/
-     content: "";
-     clear: both;
-     display: table;
+     display: block;
   }
 
   .column {
@@ -276,6 +273,7 @@ body {
   }
 
 }
+
 
 
 
