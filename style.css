@@ -81,6 +81,32 @@ body {
    100%{transform:translateX(0);}
 }
 
+/*animated button*/
+.shake{
+   background-color: #A7C7E7;
+   border:none;
+   color:black;
+   font-size:1.1rem;
+   font-weight:bold;
+   padding:14px 36px;
+   border-radius:8px;
+   cursor:pointer;
+   box-shadow:0 10px 20px rgba(0,0,0,1)
+   animation:shaky 3s ease-in-out infinite;
+}
+
+.shake:hover{
+   background:#FDFD96;
+}
+
+@keyframes shaky{
+   0%{transform:rotate(0deg);}
+   25%{transform:rotate(8deg);}
+   50%{transform:rotate(0deg);}
+   75%{transform:rotate(-8deg);}
+   100%{transform:rotate(0deg);}
+}
+
 
 .menu {
   padding-top: 10px;
@@ -273,6 +299,7 @@ body {
   }
 
 }
+
 
 
 
