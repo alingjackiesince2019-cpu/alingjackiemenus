@@ -53,11 +53,14 @@ body {
 /* ==============================
    Tabs & Menus
 ============================== */
+.slideContainer{
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   width:100%;
+}
 
 .slider{
-   display: grid;
-   place-items: center;
-   display: flex;
    animation:slide 3s ease-in-out infinite alternate;
 }
 @keyframes slide{
@@ -308,6 +311,7 @@ body {
   }
 
 }
+
 
 
 
