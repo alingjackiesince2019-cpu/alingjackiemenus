@@ -55,6 +55,7 @@ body {
 ============================== */
 
 .slider{
+   text-align:center;
    display: flex;
    overflow-x: auto;
    white-space: nowrap;
@@ -93,15 +94,7 @@ body {
   display: none;
 }
 
-@keyframes tabslider{
-   0%{transform:translateX(0);}
-   5%{transform:translateX(-15px);}
-   10%{transform:translateX(15px);}
-   15%{transform:translateX(-10px);}
-   20%{transform:translateX(10px);}
-   25%{transform:translateX(0);}
-   100%{transform:translateX(0);}
-}
+
 
 /*animated button*/
 .shake{
@@ -322,6 +315,7 @@ body {
   }
 
 }
+
 
 
 
