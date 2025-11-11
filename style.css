@@ -92,18 +92,18 @@ body {
    border-radius:8px;
    cursor:pointer;
    box-shadow:0 10px 20px rgba(0,0,0,1)
-   animation:shaky 3s ease-in-out infinite;
+   animation:swing 3s ease-in-out infinite;
 }
 
 .shake:hover{
    background:#FDFD96;
 }
 
-@keyframes shaky{
+@keyframes swing{
    0%{transform:rotate(0deg);}
-   25%{transform:rotate(8deg);}
+   25%{transform:rotate(3deg);}
    50%{transform:rotate(0deg);}
-   75%{transform:rotate(-8deg);}
+   75%{transform:rotate(-3deg);}
    100%{transform:rotate(0deg);}
 }
 
@@ -299,6 +299,7 @@ body {
   }
 
 }
+
 
 
 
