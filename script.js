@@ -288,6 +288,14 @@ function category(primeputo) {
 
 }
 
+function category(bento) {
+  const target = document.getElementById(bento);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+}
+
 
 
 
