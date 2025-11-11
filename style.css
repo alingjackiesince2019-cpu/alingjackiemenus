@@ -62,14 +62,14 @@ body {
 }
 
 .slider{
-   animation:slide 3s ease-in-out infinite alternate;
+   animation:slide 8s ease-in-out infinite alternate;
 }
 @keyframes slide{
    0%{transform:translateX(0);}
-   20%{transform:translateX(-5px);}
-   40%{transform:translateX(5px);}
-   60%{transform:translateX(10px);}
-   80%{transform:translateX(-10px);}
+   20%{transform:translateX(-30px);}
+   40%{transform:translateX(30px);}
+   60%{transform:translateX(-40px);}
+   80%{transform:translateX(40px);}
    100%{transform:translateX(0);}
 }
 
@@ -312,6 +312,7 @@ body {
   }
 
 }
+
 
 
 
