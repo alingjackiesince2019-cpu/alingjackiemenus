@@ -54,6 +54,27 @@ body {
    Tabs & Menus
 ============================== */
 
+.slider{
+   display: flex;
+   overflow-x: auto;
+   white-space: nowrap;
+   gap: 2px;
+   top: 0;
+   padding: 10px 0;
+   z-index: 100;
+   scrollbar-width: none;
+   animation:slide 3s ease-in-out infinite alternate;
+}
+@keyframes slide{
+   0%{transform:translateX(0);}
+   20%{transform:translateX(-5px);}
+   40%{transform:translateX(5px);}
+   60%{transform:translateX(10px);}
+   80%{transform:translateX(-10px);}
+   100%{transform:translateX(0);}
+}
+
+
 .tab {
   display: flex;
   overflow-x: auto;
@@ -301,6 +322,7 @@ body {
   }
 
 }
+
 
 
 
