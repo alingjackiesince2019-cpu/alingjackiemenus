@@ -63,10 +63,14 @@ body {
   background-color: #A7C7E7;
   padding: 10px 0;
   z-index: 100;
-  scrollbar-width: none;
-   animation:tabslider 8s ease-in-out infinite alternate;
-  
 }
+
+.slider{
+   scrollbar-width: none;
+   animation:tabslider 8s ease-in-out infinite alternate;
+}
+   
+
 .tab.buttons::-webkit-scrollbar{
   display: none;
 }
@@ -300,6 +304,7 @@ body {
   }
 
 }
+
 
 
 
