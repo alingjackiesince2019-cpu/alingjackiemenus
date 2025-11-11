@@ -55,7 +55,8 @@ body {
 ============================== */
 
 .slider{
-   text-align:center;
+   display: grid;
+   place-items: center;
    display: flex;
    animation:slide 3s ease-in-out infinite alternate;
 }
@@ -307,6 +308,7 @@ body {
   }
 
 }
+
 
 
 
