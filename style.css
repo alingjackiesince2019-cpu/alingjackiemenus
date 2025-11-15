@@ -247,7 +247,22 @@ body {
    background-color: #F5ECE0;
 }
 
-
+.btm-tab{
+   position:fixed;
+   bottom: 0;
+   right:0;
+   left:0;
+   width:100%;
+   display:flex;
+   background-color: #333;
+}
+.btm-btn{
+   text-align: center;
+   font-size:18px;
+   z-index:1000;
+   background-color:transparent;
+   color:white;
+}
 
 
 
@@ -313,6 +328,7 @@ body {
   }
 
 }
+
 
 
 
