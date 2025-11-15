@@ -159,12 +159,11 @@ body {
 }
 
 .fixbtn{
-   position: flex;
-   flex-direction: column;
+   position: fixed;
    bottom: 0;
-   center:0;
+   right:0;
    x-index: 100;
-   background-color: #A7C7E7;
+   
 }
 
 
@@ -315,6 +314,7 @@ body {
   }
 
 }
+
 
 
 
