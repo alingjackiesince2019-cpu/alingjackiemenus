@@ -158,13 +158,6 @@ body {
   
 }
 
-.fixbtn{
-   position: fixed;
-   top: 0;
-   right: 0;
-   z-index: 1000;
-}
-
 
 .list{
   position: flex;
@@ -183,64 +176,6 @@ body {
   z-index: 1000;  
 }
 
-.bahay{
-  position: flex;
-  gap:0px;
-  align-items:right;
-  right: 0;
-  border: none;
-  color: black;
-  padding: 20px 10px;
-  border-radius: 20px;
-  text-align: center;
-  background-color: transparent;
-  font-size: 18px;
-  margin: 0px 0px;
-  cursor: pointer;
-  z-index: 1000; 
-}
-
-.bar{
-
-  position: flex;
-  gap:0px;
-  align-items:right;
-  right: 0;
-  border: none;
-  color: black;
-  padding: 20px 10px;
-  border-radius: 20px;
-  text-align: center;
-  background-color: transparent;
-  font-size: 18px;
-  margin: 0px 0px;
-  cursor: pointer;
-  z-index: 1000; 
-}
-
-.loc{
-   position:fixed;
-   top:0;
-   left:0;
-   z-index: 1000;
-}
-
-.location{
-  position: flex;
-  gap:0px;
-  align-items:left;
-  left: 0px;
-  border: none;
-  color: black;
-  padding: 20px 10px;
-  border-radius: 20px;
-  text-align: center;
-  background-color: transparent;
-  font-size: 18px;
-  margin: 0px 0px;
-  cursor: pointer;
-  z-index: 1000; 
-}
 
 
 .b{
@@ -264,6 +199,8 @@ body {
    z-index:1000;
    background-color:transparent;
    color:white;
+   padding: 20px 10px;
+   gap:5px;
 }
 
 
@@ -330,6 +267,7 @@ body {
   }
 
 }
+
 
 
 
