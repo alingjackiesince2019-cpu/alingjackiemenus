@@ -255,6 +255,7 @@ body {
    width:100%;
    display:flex;
    background-color: #333;
+   place-item:center;
 }
 .btm-btn{
    text-align: center;
@@ -328,6 +329,7 @@ body {
   }
 
 }
+
 
 
 
