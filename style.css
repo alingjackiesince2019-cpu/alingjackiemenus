@@ -160,9 +160,10 @@ body {
 
 .fixbtn{
    position: fixed;
-   top: 0;
-   right:0;
-   z-index: 1000;
+   bottom: 0;
+   z-index: 100;
+   overflow-x: auto;
+   background-color: #A7C7E7;
 }
 
 
@@ -313,6 +314,7 @@ body {
   }
 
 }
+
 
 
 
