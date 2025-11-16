@@ -634,21 +634,23 @@
 
         <div class="row">
             <div class="column">⚬─✧─⚬  </div>
-            <div class="column" style="background-color:#DFCAA0"><h1 id="bilao">ALA CARTE/BILAO</h1></div>
+            <div class="column" style="border-radius: 20px;"><h1 id="bilao">ALA CARTE/BILAO</h1></div>
             <div class="column">⚬─✧─⚬  </div>
         </div>
 
         <!--SUBTAB ALA CARTE BILAO-->
         <div class="tab">
             <button class="btn"; onclick="category('bilao-pasta');playwhoosh();">pasta/pancit</button>
-            <button class="btn"; onclick="category('bilao-pasta');playwhoosh();">kakanin</button>
-            <button class="btn"; onclick="category('bilao-pasta');playwhoosh();">pork</button>
-            <button class="btn"; onclick="category('bilao-pasta');playwhoosh();">chicken</button>
-            <button class="btn"; onclick="category('bilao-pasta');playwhoosh();">veggies</button>
+            <button class="btn"; onclick="category('bilao-kakanin');playwhoosh();">kakanin</button>
+            <button class="btn"; onclick="category('bilao-pork');playwhoosh();">pork</button>
+            <button class="btn"; onclick="category('bilao-chicken');playwhoosh();">chicken</button>
+            <button class="btn"; onclick="category('bilao-veggies');playwhoosh();">veggies</button>
+            <button class="btn"; onclick="category('bilao-seafoods');playwhoosh();">seafoods</button>
+            <button class="btn"; onclick="category('bilao-others');playwhoosh();">others</button>
         </div>
 
         <div class="row">
-            <div class="column" style="background-color:#F6E3BA"><h1 id="bilao-pasta">pasta/pancit</h1></div>
+            <div class="column" style="background-color:#F6E3BA; border-radius: 10px;"><h1 id="bilao-pasta">pasta/pancit</h1></div>
         </div>
 
         
@@ -746,7 +748,7 @@
         </div>
 <!----------------------------------------------------------------------------------------------------------------------------------->
         <div class="row">
-            <div class="column" style="background-color:#F6E3BA"><h1 id="bilao-kakanin">kakanin</h1></div>
+            <div class="column" style="background-color:#F6E3BA; border-radius: 10px;"><h1 id="bilao-kakanin">kakanin</h1></div>
         </div>
 
         <div class="row">
@@ -838,7 +840,7 @@
         </div>
 <!--------------------------------------------------------------------------------------------------------------------------------------->
         <div class="row">
-            <div class="column" style="background-color:#F6E3BA"><h1 id="bilao-pasta">pasta/pancit</h1></div>
+            <div class="column" style="background-color:#F6E3BA; border-radius: 10px;"><h1 id="bilao-pork">pork</h1></div>
         </div>
 
         <div class="row">
@@ -848,36 +850,28 @@
                 <button class="overlay" onclick="addtocart('LECHON KAWALI', 700)"> ADD TO LIST </button>
             </div>
             
-            
-            <div class="column">
-                <img src="bilao chicken.webp" style="width:100%">
-                <div style="background-color:#fff192"><p>28-30pcs CHICKEN - 700 pesos</p></div>
-                <button class="overlay" onclick="addtocart('28-30pcs CHICKEN', 700)"> ADD TO LIST </button>
-            </div>
-        </div>
-
-        <div class="row">
             <div class="column">
                 <img src="bilao bbq.webp" style="width:100%">
                 <div style="background-color:#fff192"><p>25pcs BBQ - 700 pesos</p></div>
                 <button class="overlay" onclick="addtocart('25pcs BBQ', 700)"> ADD TO LIST </button>
             </div>
-
-
+            
             <div class="column">
                 <img src="80 shanghai.webp" style="width:100%">
                 <div style="background-color:#fff192"><p>80pcs SHANGHAI - 550 pesos</p></div>
                 <button class="overlay" onclick="addtocart('80pcs SHANGHAI', 550)"> ADD TO LIST </button>
             </div>
+            
+        </div>
+
+        <div class="row">
 
             <div class="column">
                 <img src="bilao 40 shanghai.webp" style="width:100%">
                 <div style="background-color:#fff192"><p>40pcs SHANGHAI - 275 pesos</p></div>
                 <button class="overlay" onclick="addtocart('40pcs SHANGHAI', 275)"> ADD TO LIST </button>
             </div>
-        </div>
 
-        <div class="row">
             <div class="column">
                 <img src="bilao hamroll.webp" style="width:100%">
                 <div style="background-color:#fff192"><p> 25 pcs HAM AND CHEESE ROLL - 650 pesos</p></div>
@@ -885,19 +879,48 @@
             </div>
 
             <div class="column">
+                <img src="under.png" style="width:100%">
+                <div style="background-color:#fff192"><p>PORK CRISPY KARE KARE IN 2500ML(4-5pax) - 600 pesos</p></div>
+                <button class="overlay" onclick="addtocart('PORK CRISPY KARE-KARE IN 2500ML', 600)"> ADD TO LIST </button>
+            </div>
+            
+        </div>
+
+        <div class="row">
+            
+            <div class="column">
+                <img src="bilao cordon.webp" style="width:100%">
+                <div style="background-color:#fff192"><p>20 slices CORDON BLUE W/ TARTAR SAUCE - 550 pesos</p></div>
+                <button class="overlay" onclick="addtocart('20 slices CORDON BLUE W/ TARTAR SAUCE', 550)"> ADD TO LIST </button>
+            </div>
+            
+        </div>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="row">
+            <div class="column" style="background-color:#F6E3BA; border-radius: 10px;"><h1 id="bilao-chicken">chicken</h1></div>
+        </div>
+  
+        <div class="row">
+
+            <div class="column">
+                <img src="bilao chicken.webp" style="width:100%">
+                <div style="background-color:#fff192"><p>28-30pcs CHICKEN - 700 pesos</p></div>
+                <button class="overlay" onclick="addtocart('28-30pcs CHICKEN', 700)"> ADD TO LIST </button>
+            </div>
+        </div>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="row">
+            <div class="column" style="background-color:#F6E3BA; border-radius: 10px;"><h1 id="bilao-veggies">veggies</h1></div>
+        </div>
+
+        <div class="row">
+            
+            <div class="column">
                 <img src="mojos.webp" style="width:100%">
                 <div style="background-color:#fff192"><p>MOJOS - 500 pesos</p></div>
                 <button class="overlay" onclick="addtocart('MOJOS', 500)"> ADD TO LIST </button>
             </div>
 
-            <div class="column">
-                <img src="half chix and shanghai.webp" style="width:100%">
-                <div style="background-color:#fff192"><p>40pcs SHANGHAI & 15pcs CHICKEN - 600 pesos</p></div>
-                <button class="overlay" onclick="addtocart('40pcs SHANGHAI & 15pcs CHICKEN', 600)"> ADD TO LIST </button>
-            </div>
-        </div>
-
-        <div class="row">
             <div class="column">
                 <img src="mango kani salad big.webp" style="width:100%">
                 <div style="background-color:#fff192"><p>MANGO KANI SALAD W/ THOUSAND ISLAND - 750 pesos</p></div>
@@ -910,25 +933,30 @@
                 <button class="overlay" onclick="addtocart('10pcs BIG SIZE FRESH LUMPIA W/ THOUSAND ISLAND', 550)"> ADD TO LIST </button>
             </div>
             
-            <div class="column">
-                <img src="under.png" style="width:100%">
-                <div style="background-color:#fff192"><p>PORK CRISPY KARE KARE IN 2500ML(4-5pax) - 600 pesos</p></div>
-                <button class="overlay" onclick="addtocart('PORK CRISPY KARE-KARE IN 2500ML', 600)"> ADD TO LIST </button>
-            </div>
         </div>
-
+<!------------------------------------------------------------------------------------------------------------------------------------------>
         <div class="row">
-            <div class="column">
-                <img src="bilao cordon.webp" style="width:100%">
-                <div style="background-color:#fff192"><p>20 slices CORDON BLUE W/ TARTAR SAUCE - 550 pesos</p></div>
-                <button class="overlay" onclick="addtocart('20 slices CORDON BLUE W/ TARTAR SAUCE', 550)"> ADD TO LIST </button>
-            </div>
-            
+            <div class="column" style="background-color:#F6E3BA; border-radius: 10px;"><h1 id="bilao-seafood">seafoods</h1></div>
+        </div>
+        
+        <div class="row">           
             <div class="column">
                 <img src="under.png" style="width:100%">
                 <div style="background-color:#fff192"><p>1kg FISH FILLET W/ TARTAR SAUCE- 600 pesos</p></div>
                 <button class="overlay" onclick="addtocart('1kg FISH FILLET W/ TARTAR SAUCE', 600)"> ADD TO LIST </button>
-            </div>            
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column" style="background-color:#F6E3BA; border-radius: 10px;"><h1 id="bilao-others">others</h1></div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="half chix and shanghai.webp" style="width:100%">
+                <div style="background-color:#fff192"><p>40pcs SHANGHAI & 15pcs CHICKEN - 600 pesos</p></div>
+                <button class="overlay" onclick="addtocart('40pcs SHANGHAI & 15pcs CHICKEN', 600)"> ADD TO LIST </button>
+            </div>          
         </div><!--ala carte bilao-->
 
         <!--party tray-->
@@ -2807,6 +2835,7 @@
 
 
 </html>
+
 
 
 
