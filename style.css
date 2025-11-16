@@ -159,25 +159,6 @@ body {
 }
 
 
-.list{
-  position: flex;
-  gap:0px;
-  align-items:right;
-  right: 0;
-  border: none;
-  color: black;
-  padding: 20px 10px;
-  border-radius: 20px;
-  text-align: center;
-  background-color: transparent;
-  font-size: 18px;
-  margin: 0px 0px;
-  cursor: pointer;
-  z-index: 1000;  
-}
-
-
-
 .b{
    background-color: #F5ECE0;
 }
@@ -199,6 +180,8 @@ body {
    z-index:1000;
    background-color:transparent;
    color:white;
+   border-radius: 20px;
+   display: inline-block;
 }
 
 
@@ -265,6 +248,7 @@ body {
   }
 
 }
+
 
 
 
