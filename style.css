@@ -98,7 +98,7 @@ body {
   white-space: nowrap;
   gap: 2px;
   top: 0;
-  background-color: #ffffcc;
+  background-color: 	#f3d6c3;
   padding: 10px 0;
   z-index: 100;
   scrollbar-width: none;   
@@ -110,7 +110,7 @@ body {
   white-space: nowrap;
   gap: 2px;
   top: 0;
-  background-color: #ddddbb;
+  background-color: transparent;
   padding: 10px 0;
   z-index: 100;
   scrollbar-width: none;   
@@ -273,6 +273,7 @@ body {
   }
 
 }
+
 
 
 
