@@ -92,6 +92,18 @@ body {
   display: none;
 }
 
+.subTab{
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 2px;
+  top: 0;
+  background-color: #ffffcc;
+  padding: 5px 0;
+  z-index: 100;
+  scrollbar-width: none;   
+}
+
 
 
 /*animated button*/
@@ -248,6 +260,7 @@ body {
   }
 
 }
+
 
 
 
