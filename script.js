@@ -55,18 +55,11 @@ document.getElementById('tutorial').addEventListener('click', () => {
 document.getElementById("search").addEventListener("input",function(){
   const searchValue = this.value.toLowerCase();
   const a = document.querySelectorAll(".column");
-  const button = document.getElementByid('myButton');
 
   a.forEach(a=>{
     const text = a.textContent.toLowerCase();
     a.style.display=text.includes(searchValue)?"block":"none"
   })
-  if(serarchValue.value.trim() !== ""{
-  button.style.display = 'none';
-}
-else{
-  button.style.display='inline-block';
-}
   
 })
 
@@ -303,6 +296,7 @@ function category(bento) {
   }
 
 }
+
 
 
 
