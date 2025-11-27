@@ -209,14 +209,6 @@ body {
    margin-right: 15px;
 }
 
-/*my Button hide*/
-#myButton{
-   transition:opacity 0.3s;
-}
-#myButton.hidden{
-   opacity:0;
-   pointer-events:none;
-}
 
 
 /* ==============================
@@ -281,6 +273,7 @@ body {
   }
 
 }
+
 
 
 
